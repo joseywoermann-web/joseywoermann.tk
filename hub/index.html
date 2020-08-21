@@ -3,16 +3,57 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+
+
+
+  <style>
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  </style>
+  
   </head>
+
+
+
+
+
+
   <body style="background-color:white;">
-    <a href="https://joseywoermann.github.io">Go home</a><br>
-    <a href="https://twitter.com/joseywoermann/">Twitter</a><br>
-    <a href="https://instagram.com/joseywoermann/">Instagram</a><br>
-    <a href="https://github.com/joseywoermann/">GitHub</a><br>
-    <a href="https://reddit.com/u/joseywoermann/">Reddit</a><br>
-    <a href="https://twitch.tv/joseywoermann/">Twitch</a><br>
-    <a href="https://open.spotify.com/user/w4hr6z4i7at3c1wwrfxirf5ei">Spotify</a><br>
-    <a href="https://steamcommunity.com/id/joseywoermann">Steam</a><br>
-    <a href="https://www.youtube.com/channel/UCZOgGMDsIn4M3dbr1f7Lukw">Youtube</a><br>
+    <a target="_blank" href="https://joseywoermann.github.io">Go home</a><br>
+    <a target="_blank" href="https://twitter.com/joseywoermann/">Twitter</a><br>
+    <a target="_blank" href="https://instagram.com/joseywoermann/">Instagram</a><br>
+    <a target="_blank" href="https://github.com/joseywoermann/">GitHub</a><br>
+    <a target="_blank" href="https://reddit.com/u/joseywoermann/">Reddit</a><br>
+    <a target="_blank" href="https://twitch.tv/joseywoermann/">Twitch</a><br>
+    <a target="_blank" href="https://open.spotify.com/user/w4hr6z4i7at3c1wwrfxirf5ei">Spotify</a><br>
+    <a target="_blank" href="https://steamcommunity.com/id/joseywoermann">Steam</a><br>
+    <a target="_blank" href="https://www.youtube.com/channel/UCZOgGMDsIn4M3dbr1f7Lukw">Youtube</a><br>
+
+
+
+    <div class="dropdown">
+      <span>Mouse over me</span>
+      <div class="dropdown-content">
+      <p>Hello World!</p>
+      </div>
+    </div>
+
   </body>
 </html>
