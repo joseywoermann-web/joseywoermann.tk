@@ -1,3 +1,9 @@
+body {
+  color: white;
+  font-size:28pt;  /* Größe 28pt   */
+  font-family:verdana; /* Schriftart */
+}
+
 .social-media-links {
   position: relative;
   left: 80%;
