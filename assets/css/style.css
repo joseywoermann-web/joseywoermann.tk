@@ -1,14 +1,55 @@
+/*padding: top right bottom left;*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body { /*everything*/
   color: white;
   font-size:28pt;
   font-family:verdana;
+  line-height: 28px;
 }
 
-.social-media-links { /*social-media links + link to projects*/
-  position: relative;
-  right: 20px;
+.wrapper { /*content*/
+  margin: 0 auto;
+  width: 95%;
 }
 
+
+
+
+.twitter {
+  position: absolute;
+  top: 30%;
+  right: 30%;
+}
+
+.instagram {
+  position: absolute;
+  top: 40%;
+  right: 30%;
+}
+
+.reddit {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+}
+
+.discord {
+  position: absolute;
+  top: 60%;
+  right: 30%;
+}
+
+.projects {
+  position: absolute;
+  top: 70%;
+  right: 30%;
+}
 
 .dropdown {
   position: relative;
