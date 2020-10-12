@@ -1,12 +1,12 @@
-body {
+body { /*everything*/
   color: white;
   font-size:28pt;
   font-family:verdana;
 }
 
-.social-media-links {
+.social-media-links { /*social-media links + link to projects*/
   position: relative;
-  left: 80%;
+  right: 20px;
 }
 
 
@@ -30,7 +30,7 @@ body {
 }
 
 
-
+/*formatting of ,inks*/
 a:link {
   color: white;
   background-color: transparent;
