@@ -51,6 +51,21 @@ body { /*everything*/
   right: 30%;
 }
 
+
+/*startpage*/
+
+.welcome {
+  position: absolute;
+  top: 30%;
+  right: 50%;
+}
+
+.nothing-here {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
