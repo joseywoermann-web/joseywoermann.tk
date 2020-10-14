@@ -101,8 +101,8 @@ body { /*everything*/
       .slideshow-container {
         max-width: 30%; /*30% der Bildschirmbreite*/
         position: absolute;
-        top: 50%;
-        left: 30%;
+        top: 30%;
+        left: 10%;
         /*margin: auto; */
       }
 
@@ -144,9 +144,9 @@ body { /*everything*/
       /* Fading animation */
       .fade {
         -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
+        -webkit-animation-duration: 2s;
         animation-name: fade;
-        animation-duration: 1.5s;
+        animation-duration: 2s;
       }
 
       @-webkit-keyframes fade {
