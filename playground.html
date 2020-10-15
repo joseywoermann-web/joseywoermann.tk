@@ -55,6 +55,18 @@
         <span class="dot"></span>
       </div>
 
+<!-- cookies-->
+
+      <div id="footer-cookie">
+        <span id="description">
+          This website does not use cookies or tracker to steal your personal data. <!-- <a href="https://dakitec.de/blog/cookie-banner-selbst-erstellen">Finde ich gut</a> <a href="https://facebook.com/">Will aber Tracker!</a>-->
+        </span>
+        <span id="accept"><a href="javascript:void(0)" title="Akzeptieren">I like that.</a></span>
+        <span id="accept"><a target="_blank" href="https://facebook.com/" title="Akzeptieren">I WANT TRACKER</a></span>
+      </div>
+<!-- cookies-->
+
+      
 
       <script>
         var slideIndex = 0;
@@ -76,6 +88,24 @@
           dots[slideIndex-1].className += " active";
           setTimeout(showSlides, 7000); // Change image every  seconds
         }
+
+/*cookies*/
+
+        var footerCookie = document.querySelector("#footer-cookie");
+        var footerCookieAccept = document.querySelector("#accept");
+
+        if (document.cookie.indexOf("dakitecCookieBanner=") == -1) {
+          footerCookie.style.display = "block";
+        }
+
+          footerCookieAccept.onclick = function(e) {
+          var cookieDate = new Date();
+          cookieDate.setTime(new Date().getTime() + 0); /*time until the dialog shows up again*/
+
+          document.cookie = "dakitecCookieBanner = 1; path=/; secure; expires=" + cookieDate.toUTCString();
+
+          footerCookie.style.display = "none";
+        };
       </script>
 
 <!-- end slideshow -->
