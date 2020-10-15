@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex,follow">
-  <title>Cookie Banner | Dakitec.de</title>
+  <title>Cookie Banner</title>
 
   <style>
     body {
@@ -99,9 +99,9 @@
       footerCookie.style.display = "block";
     }
 
-    footerCookieAccept.onclick = function(e) {
+      footerCookieAccept.onclick = function(e) {
       var cookieDate = new Date();
-      cookieDate.setTime(new Date().getTime() + 31104000000);
+      cookieDate.setTime(new Date().getTime() + 0);
 
       document.cookie = "dakitecCookieBanner = 1; path=/; secure; expires=" + cookieDate.toUTCString();
 
