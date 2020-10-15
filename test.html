@@ -101,7 +101,7 @@
 
       footerCookieAccept.onclick = function(e) {
       var cookieDate = new Date();
-      cookieDate.setTime(new Date().getTime() + 0);
+      cookieDate.setTime(new Date().getTime() + 10); /*time until the dialog shows up again*/
 
       document.cookie = "dakitecCookieBanner = 1; path=/; secure; expires=" + cookieDate.toUTCString();
 
