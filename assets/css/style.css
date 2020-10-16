@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-body {
+* {
   color: white;
   font-size:28pt;
   font-family:verdana;
@@ -36,24 +36,23 @@ body {
   right: 30%;
 }
 
-.reddit {
+.reddit { /*actually discord, but for some bizarre reason it doesn't work in any other way*/
   position: absolute;
   top: 50%;
   right: 30%;
 }
 
-.discord {
+.discord { /*actually projects, but for some bizarre reason it doesn't work in any other way*/
   position: absolute;
   top: 60%;
   right: 30%;
 }
 
-.projects {
+.projects { /*actually about, but for some bizarre reason it doesn't work in any other way*/
   position: absolute;
   top: 70%;
   right: 30%;
 }
-
 
 /*end startpage-links*/
 
@@ -110,6 +109,7 @@ img {
 }
 
 /* Slideshow container */
+
 .slideshow-container {
   max-width: 30%; /*30% der Bildschirmbreite*/
   position: absolute;
@@ -181,6 +181,11 @@ img {
   }
 }
 
+#test {
+  display: block;
+}
+
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .caption {
@@ -190,7 +195,11 @@ img {
 
 /*end slideshow*/
 
-
+@media only screen and (max-width: 500px) {
+  #test {
+    display: none;
+  }
+}
 
 
 
