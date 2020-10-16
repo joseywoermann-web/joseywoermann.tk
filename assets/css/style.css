@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-body { /*everything*/
+body {
   color: white;
   font-size:28pt;
   font-family:verdana;
@@ -21,6 +21,8 @@ body { /*everything*/
 
 
 
+
+/*startpage-links*/
 
 .twitter {
   position: absolute;
@@ -53,7 +55,12 @@ body { /*everything*/
 }
 
 
-/*startpage*/
+/*end startpage-links*/
+
+
+
+
+/*temporary page*/
 
 .welcome {
   position: absolute;
@@ -85,6 +92,11 @@ body { /*everything*/
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/*end temporary page*/
+
+
+
 
 
 /*slideshow*/
@@ -177,6 +189,10 @@ img {
 }
 
 /*end slideshow*/
+
+
+
+
 
 /*cookies*/
 #footer-cookie {
