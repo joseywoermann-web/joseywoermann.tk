@@ -195,12 +195,6 @@ img {
 
 /*end slideshow*/
 
-@media only screen and (max-width: 500px) {
-  #test {
-    display: none;
-  }
-}
-
 
 
 /*cookies*/
