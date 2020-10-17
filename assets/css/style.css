@@ -7,12 +7,12 @@
   box-sizing: border-box;
 }
 
-* {
+/** {
   color: white;
   font-size:28pt;
   font-family:verdana;
   line-height: 28px;
-}
+}*/
 
 .wrapper { /*content*/
   margin: 0 auto;
@@ -181,9 +181,6 @@ img {
   }
 }
 
-#test {
-  display: block;
-}
 
 
 /* On smaller screens, decrease text size */
@@ -197,15 +194,18 @@ img {
 
 
 
+
+
 /*cookies*/
-#footer-cookie {
+/*
+#cookie-description {
   color: white;
-  font-size:15pt;
+  font-size: 15pt;
   font-family:verdana;
-  line-height: 15px;
+  line-height: 150px;
 }
 
-#footer-cookie, #footer-cookie * {
+#footer-cookie {
   box-sizing: border-box;
 }
 
@@ -218,24 +218,24 @@ img {
   height: 60px;
   padding-left: 30px;
   padding-right: 30px;
-  line-height: 60px;
+  line-height: 15px;
   background: #303030;
   color: #fff;
 }
 
-#footer-cookie a {
+#footer-cookie {
   color: #fff;
 }
 
-#footer-cookie #description {
+.cookie-description {
   float: left;
 }
 
-#footer-cookie #accept {
+.cookie-button {
   float: right;
 }
 
-#footer-cookie #accept a {
+#accept-cookie {
   border: 1px solid #fff;
   padding: 5px 10px;
   text-decoration: none;
@@ -249,26 +249,32 @@ img {
     height: auto;
   }
 
-  #footer-cookie #description {
+  #cookie-description {
     width: 100%;
   }
 
-  #footer-cookie #accept {
+  .cookie-button {
     width: 100%;
     margin-top: 15px;
+    margin-bottom: 15px;
   }
 
-  #footer-cookie #accept a {
+  #accept-cookie {
     width: 100%;
     display: block;
     text-align: center;
   }
-}
-/*cookies*/
+
+  #decline-cookie {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }*/
+}/*cookies*/
 
 
 
-/*formatting of ,inks*/
+/*formatting of links*/
 a:link {
   color: white;
   background-color: transparent;
