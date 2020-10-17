@@ -197,80 +197,11 @@ img {
 
 
 /*cookies*/
-/*
-#cookie-description {
-  color: white;
-  font-size: 15pt;
-  font-family:verdana;
-  line-height: 150px;
-}
 
-#footer-cookie {
-  box-sizing: border-box;
-}
 
-#footer-cookie {
-  display: none;
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  height: 60px;
-  padding-left: 30px;
-  padding-right: 30px;
-  line-height: 15px;
-  background: #303030;
-  color: #fff;
-}
 
-#footer-cookie {
-  color: #fff;
-}
 
-.cookie-description {
-  float: left;
-}
-
-.cookie-button {
-  float: right;
-}
-
-#accept-cookie {
-  border: 1px solid #fff;
-  padding: 5px 10px;
-  text-decoration: none;
-}
-
-@media (max-width: 1200px) {
-  #footer-cookie {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    line-height: inherit;
-    height: auto;
-  }
-
-  #cookie-description {
-    width: 100%;
-  }
-
-  .cookie-button {
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  #accept-cookie {
-    width: 100%;
-    display: block;
-    text-align: center;
-  }
-
-  #decline-cookie {
-    width: 100%;
-    display: block;
-    text-align: center;
-  }*/
-}/*cookies*/
+/*cookies*/
 
 
 
