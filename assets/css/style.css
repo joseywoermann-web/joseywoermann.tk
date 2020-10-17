@@ -7,12 +7,12 @@
   box-sizing: border-box;
 }
 
-* {
+/** {
   color: white;
   font-size:28pt;
   font-family:verdana;
   line-height: 28px;
-}
+}*/
 
 .wrapper { /*content*/
   margin: 0 auto;
@@ -197,82 +197,15 @@ img {
 
 
 /*cookies*/
-
-#footer-cookie {
-  color: white;
-  font-size:15pt;
-  font-family:verdana;
-  line-height: 15px;
-}
-
-#footer-cookie, #footer-cookie * {
-  box-sizing: border-box;
-}
-
-#footer-cookie {
-  display: none;
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  height: 60px;
-  padding-left: 30px;
-  padding-right: 30px;
-  line-height: 60px;
-  background: #303030;
-  color: #fff;
-}
-
-#footer-cookie a {
-  color: #fff;
-}
-
-#footer-cookie #description {
-  float: left;
-}
-
-#footer-cookie #accept {
-  float: right;
-}
-
-#footer-cookie #accept a {
-  border: 1px solid #fff;
-  padding: 5px 10px;
-  text-decoration: none;
-}
-
-@media (max-width: 1200px) {
-  #footer-cookie {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    line-height: inherit;
-    height: auto;
-  }
-
-  #footer-cookie #description {
-    width: 100%;
-  }
-
-  #footer-cookie #accept {
-    width: 100%;
-    margin-top: 15px;
-  }
-
-  #footer-cookie #accept a {
-    width: 100%;
-    display: block;
-    text-align: center;
-  }
-}
 /*
-#footer-cookie {
+#cookie-description {
   color: white;
-  font-size:15pt;
+  font-size: 15pt;
   font-family:verdana;
-  line-height: 15px;
+  line-height: 150px;
 }
 
-#footer-cookie, #footer-cookie * {
+#footer-cookie {
   box-sizing: border-box;
 }
 
@@ -290,19 +223,19 @@ img {
   color: #fff;
 }
 
-#footer-cookie a {
+#footer-cookie {
   color: #fff;
 }
 
-#footer-cookie #description {
+.cookie-description {
   float: left;
 }
 
-#footer-cookie #accept {
+.cookie-button {
   float: right;
 }
 
-#footer-cookie #accept a {
+#accept-cookie {
   border: 1px solid #fff;
   padding: 5px 10px;
   text-decoration: none;
@@ -316,22 +249,28 @@ img {
     height: auto;
   }
 
-  #footer-cookie #description {
+  #cookie-description {
     width: 100%;
   }
 
-  #footer-cookie #accept {
+  .cookie-button {
     width: 100%;
     margin-top: 15px;
+    margin-bottom: 15px;
   }
 
-  #footer-cookie #accept a {
+  #accept-cookie {
     width: 100%;
     display: block;
     text-align: center;
   }
-}*/
-/*cookies*/
+
+  #decline-cookie {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }*/
+}/*cookies*/
 
 
 
