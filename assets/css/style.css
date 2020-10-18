@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:verdana;
+  font-family:calibri;
   color: white;
 }
 
@@ -104,6 +104,21 @@
 
 
 
+/*about*/
+
+.about-me {
+
+}
+
+
+/*end about*/
+
+
+
+
+
+/*home*/
+
 /*slideshow*/
 
 .mySlides {
@@ -197,6 +212,12 @@ img {
 /*end slideshow*/
 
 
+/*end home*/
+
+
+
+
+
 
 
 
@@ -271,6 +292,12 @@ img {
 }
 
 /*cookies*/
+
+
+
+
+
+
 
 
 
