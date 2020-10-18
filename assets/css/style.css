@@ -5,14 +5,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family:verdana;
+  color: white;
 }
 
 .wrapper {
-  color: white;
   font-size:28pt;
-  font-family:verdana;
   line-height: 28px;
-
   margin: 0 auto;
   width: 95%;
 }
@@ -65,7 +64,7 @@
   right: 50%;
 }
 
-.nothing-here {
+#nothing-here {
   position: absolute;
   top: 50%;
   right: 50%;
@@ -84,6 +83,15 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
   z-index: 1;
+}
+
+.dropdown-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  line-height: 37px;
 }
 
 .dropdown:hover .dropdown-content {
