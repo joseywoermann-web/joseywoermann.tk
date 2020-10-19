@@ -1,11 +1,15 @@
 /*padding: top right bottom left; */
 
+/*import font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:calibri;
+  font-family: 'Montserrat', sans-serif;
   color: white;
 }
 
@@ -226,7 +230,7 @@ img {
 #footer-cookie {
   color: white;
   font-size:15pt;
-  font-family:verdana;
+  font-family: 'Montserrat', sans-serif;
   line-height: 15px;
 
   display: none;
