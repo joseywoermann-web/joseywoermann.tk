@@ -16,9 +16,9 @@
 
 .wrapper {
   font-size:28pt;
-  line-height: 28px;
+  line-height: 45px;
   margin: 0 auto;
-  width: 95%;
+  width: 90%;
 }
 
 
@@ -111,10 +111,14 @@
 
 /*about*/
 
-.about-me {
-
+.about-me-text {
+  margin-top: 5%; /*make space from the top of the page*/
+  font-size: 25pt;
 }
 
+#link {
+  text-decoration: underline; /*underline links*/
+}
 
 /*end about*/
 
@@ -255,11 +259,15 @@ img {
   margin-bottom: 3px;
   margin-right: 3px;
   margin-left: 3px;
+
+  background: #25282b;
 }
 
 
 #footer-cookie #description {
   float: left;
+
+  background: #25282b;
 }
 
 #footer-cookie #accept {
@@ -270,6 +278,8 @@ img {
   border: 1px solid #fff;
   padding: 5px 10px;
   text-decoration: none;
+
+  background: #25282b;
 }
 
 @media (max-width: 1200px) {
@@ -323,7 +333,6 @@ a:hover {
   color: white;
   background-color: transparent;
   text-decoration: none;
-  font-size: 60px;
 }
 
 a:active {
