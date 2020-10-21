@@ -119,7 +119,7 @@
 /* On smaller screens, increase text size */
 @media only screen and (max-width: 1441px) {
   .about-me-text {
-    font-size: 28pt;
+    font-size: 30pt;
   }
 }
 
