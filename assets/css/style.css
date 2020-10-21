@@ -116,6 +116,14 @@
   font-size: 25pt;
 }
 
+/* On smaller screens, increase text size */
+@media only screen and (max-width: 1441px) {
+  .about-me-text {
+    font-size: 28pt;
+  }
+}
+
+
 #link {
   text-decoration: underline; /*underline links*/
 }
@@ -211,12 +219,7 @@ img {
   }
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .caption {
-    font-size: 11px
-  }
-}
+
 
 /*end slideshow*/
 
