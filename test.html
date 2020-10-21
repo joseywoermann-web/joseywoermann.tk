@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  padding: 25px;
+  background-image: url("https://i.pinimg.com/originals/6a/28/9c/6a289c0fa41e89fb24157e34b1237592.jpg");
+  color: white;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-image: url("https://raw.githubusercontent.com/joseywoermann/joseywoermann.github.io/master/assets/images/background.jpg");
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Toggle Dark/Light Mode</h2>
+<p>Click the button to toggle between dark and light mode for this page.</p>
+
+<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>

@@ -255,11 +255,15 @@ img {
   margin-bottom: 3px;
   margin-right: 3px;
   margin-left: 3px;
+
+  background: #25282b;
 }
 
 
 #footer-cookie #description {
   float: left;
+
+  background: #25282b;
 }
 
 #footer-cookie #accept {
@@ -270,6 +274,8 @@ img {
   border: 1px solid #fff;
   padding: 5px 10px;
   text-decoration: none;
+
+  background: #25282b;
 }
 
 @media (max-width: 1200px) {
