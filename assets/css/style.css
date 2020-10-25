@@ -111,14 +111,23 @@
 
 /*about*/
 
-.about-me-text {
-  margin-top: 5%; /*make space from the top of the page*/
+.about-me {
+  position: absolute;
+  top: 10vh;
+  margin-right: 5vw;
+  /*margin-top: 5%;*/ /*make space from the top of the page*/
+  font-size: 25pt;
+}
+
+.site-facts {
+  position: absolute;
+  bottom: 5vh;
   font-size: 25pt;
 }
 
 /* On smaller screens, increase text size */
 @media only screen and (max-width: 1441px) {
-  .about-me-text {
+  .about-me {
     font-size: 30pt;
   }
 }
@@ -128,6 +137,20 @@
   text-decoration: underline; /*underline links*/
 }
 
+
+.footer {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #25282b;
+   color: white;
+   text-align: center;
+   border: 2px solid black;
+   border-radius: 8px;
+
+
+}
 /*end about*/
 
 
@@ -156,36 +179,6 @@ img {
   /*margin: auto; */
 }
 
-/* Caption text */
-/*.caption {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}*/
-
-/* Number text (1/3 etc) */
-/*.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}*/
-
-/* The dots/bullets/indicators */
-/*.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-} */
 
 .active {
   background-color: #717171;
@@ -252,7 +245,6 @@ img {
   line-height: 60px;
   background: #25282b;
   color: #fff;
-  /*border: 1px solid #fff;*/
 
 
 }
@@ -312,9 +304,18 @@ img {
 /*cookies*/
 
 
+/*coming soon*/
+.coming-soon {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: 30vw;
+}
 
 
-
+/*end of coming soon*/
 
 
 
