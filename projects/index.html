@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <link rel="icon" href="https://avatars0.githubusercontent.com/u/67111271">
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://avatars0.githubusercontent.com/u/67111271" />
     <title>coming soon - joseywoermann</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-RQ5YCW12QJ"></script>
@@ -18,9 +16,7 @@
 
       gtag('config', 'G-RQ5YCW12QJ');
     </script>-->
-
   </head>
-
 
   <body>
     <div class="wrapper">
@@ -29,18 +25,18 @@
       </div>
     </div>
 
-
-<!-- cookies-->
+    <!-- cookies-->
 
     <div id="footer-cookie">
-        <span id="description">
-          Diese Seite nutzt keine Cookies oder Tracker. (Außer, um disen Banner zu betreiben.) <!-- <a href="https://dakitec.de/blog/cookie-banner-selbst-erstellen">Finde ich gut</a> <a href="https://facebook.com/">Will aber Tracker!</a>-->
-        </span>
-        <span id="accept"><a href="javascript:void(0)" title="Akzeptieren">Finde ich gut</a></span>
-        <span id="accept"><a  target="_blank" href="https://facebook.com/" title="decline">Will aber Tracker!</a></span>
+      <span id="description">
+        Diese Seite nutzt keine Cookies oder Tracker. (Außer, um disen Banner zu betreiben.)
+        <!-- <a href="https://dakitec.de/blog/cookie-banner-selbst-erstellen">Finde ich gut</a> <a href="https://facebook.com/">Will aber Tracker!</a>-->
+      </span>
+      <span id="accept"><a href="javascript:void(0)" title="Akzeptieren">Finde ich gut</a></span>
+      <span id="accept"><a target="_blank" href="https://facebook.com/" title="decline">Will aber Tracker!</a></span>
     </div>
 
-<!-- cookies-->
+    <!-- cookies-->
 
     <script>
       var footerCookie = document.querySelector("#footer-cookie");
@@ -50,13 +46,13 @@
         footerCookie.style.display = "block";
       }
 
-      footerCookieAccept.onclick = function(e) {
-      var cookieDate = new Date();
-      cookieDate.setTime(new Date().getTime() + 86400000); // shows up again after 1 day
+      footerCookieAccept.onclick = function (e) {
+        var cookieDate = new Date();
+        cookieDate.setTime(new Date().getTime() + 86400000); // shows up again after 1 day
 
-      document.cookie = "cookiebanner = 1; path=/; secure; expires=" + cookieDate.toUTCString();
+        document.cookie = "cookiebanner = 1; path=/; secure; expires=" + cookieDate.toUTCString();
 
-      footerCookie.style.display = "none";
+        footerCookie.style.display = "none";
       };
     </script>
   </body>

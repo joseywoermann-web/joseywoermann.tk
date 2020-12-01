@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
   <head>
-    <meta charset="utf-8">
-    <link rel="icon" href="https://avatars0.githubusercontent.com/u/67111271">
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://avatars0.githubusercontent.com/u/67111271" />
     <title>playground - joseywoermann</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="website" />
     <meta property="og:title" content="home - joseywoermann" />
     <meta property="og:description" content="I could put a description here, but I don't want to." />
     <meta name="description" content="I could put a description here, but I don't want to." />
     <meta property="og:url" content="https://joseywoermann.github.io/playground/" />
     <meta property="og:image" content="https://avatars0.githubusercontent.com/u/67111271" />
 
-
     <style>
       /*Only show the slideshow on larger screens*/
-      .slideshow-container{display:block;}
+      .slideshow-container {
+        display: block;
+      }
       @media screen and (max-width: 1441px) {
-            .slideshow-container{
-                  display:none !important;
-         }
-       }
-
+        .slideshow-container {
+          display: none !important;
+        }
+      }
     </style>
-
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-RQ5YCW12QJ"></script>
@@ -37,71 +35,60 @@
 
       gtag('config', 'G-RQ5YCW12QJ');
     </script>-->
-
-
   </head>
 
-
   <body>
-    <img id="background-image" src="https://raw.githubusercontent.com/joseywoermann/joseywoermann.github.io/master/assets/images/background.jpg" alt="background">
+    <img id="background-image" src="https://raw.githubusercontent.com/joseywoermann/joseywoermann.github.io/master/assets/images/background.jpg" alt="background" />
     <div class="wrapper">
       <div class="social-media-links">
         <a class="twitter" target="_blank" href="https://twitter.com/joseywoermann/" title="Follow me on Twitter">twitter</a>
         <a class="instagram" target="_blank" href="https://instagram.com/joseywoermann/" title="Follow me on Instagram">instagram</a>
-        <a class="reddit" target="_blank" href="https://discord.gg/SchJckc" title="join my discord-server">discord</a> <!--the class doesn't match because of some weird error-->
-        <a class="discord" target="_blank" href="https://joseywoermann.github.io/projects/" title="view my projects">projects</a> <!--the class doesn't match because of some wewird error-->
-        <a class="projects" target="_blank" href="https://joseywoermann.github.io/about/" title="i guess every site needs this">about</a> <!--the class doesn't match because of some wewird error-->
+        <a class="reddit" target="_blank" href="https://discord.gg/SchJckc" title="join my discord-server">discord</a>
+        <!--the class doesn't match because of some weird error-->
+        <a class="discord" target="_blank" href="https://joseywoermann.github.io/projects/" title="view my projects">projects</a>
+        <!--the class doesn't match because of some wewird error-->
+        <a class="projects" target="_blank" href="https://joseywoermann.github.io/about/" title="i guess every site needs this">about</a>
+        <!--the class doesn't match because of some wewird error-->
       </div>
-
-
-
-
     </div>
 
-<!-- slideshow -->
+    <!-- slideshow -->
 
     <div class="slideshow-container">
-
       <div class="mySlides fade">
-        <img id="slideshow-img" src="assets/images/slideshow/1.jpg" style="width:100%">
+        <img id="slideshow-img" src="assets/images/slideshow/1.jpg" style="width: 100%;" />
         <!--<div class="caption">Caption Text</div>-->
       </div>
 
       <div class="mySlides fade">
-        <img id="slideshow-img" src="assets/images/slideshow/2.jpg" style="width:100%">
+        <img id="slideshow-img" src="assets/images/slideshow/2.jpg" style="width: 100%;" />
         <!--<div class="caption">Caption Two</div>-->
       </div>
 
       <div class="mySlides fade">
-        <img id="slideshow-img" src="assets/images/slideshow/3.jpg" style="width:100%">
+        <img id="slideshow-img" src="assets/images/slideshow/3.jpg" style="width: 100%;" />
         <!--<div class="caption">Caption Three</div>-->
       </div>
-
     </div>
-    <br>
+    <br />
 
-    <div style="text-align:center">
+    <div style="text-align: center;">
       <span class="dot"></span>
       <span class="dot"></span>
       <span class="dot"></span>
     </div>
 
-
-
-
-<!-- cookies-->
+    <!-- cookies-->
 
     <div id="footer-cookie">
-        <span id="description">
-          Diese Seite nutzt keine Cookies oder Tracker. (Außer, um disen Banner zu betreiben.)
-        </span>
-        <span id="accept"><a href="javascript:void(0)" title="Akzeptieren">Finde ich gut</a></span>
-        <span id="accept"><a  target="_blank" href="https://facebook.com/" title="decline">Will aber Tracker!</a></span>
+      <span id="description">
+        Diese Seite nutzt keine Cookies oder Tracker. (Außer, um disen Banner zu betreiben.)
+      </span>
+      <span id="accept"><a href="javascript:void(0)" title="Akzeptieren">Finde ich gut</a></span>
+      <span id="accept"><a target="_blank" href="https://facebook.com/" title="decline">Will aber Tracker!</a></span>
     </div>
 
-
     <script>
-
       /*Slideshow*/
       var slideIndex = 0;
       showSlides();
@@ -130,7 +117,6 @@
         setTimeout(showSlides, 7000); // Change image every 7 seconds
       }
 
-
       /*cookies*/
 
       var footerCookie = document.querySelector("#footer-cookie");
@@ -148,13 +134,6 @@
 
         footerCookie.style.display = "none";
       };
-
     </script>
-
-<!-- end slideshow -->
-
-  <!-- <p title="You´ve found magic">Some text</p> -->
-
-
   </body>
 </html>
