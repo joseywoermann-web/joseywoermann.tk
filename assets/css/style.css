@@ -33,22 +33,19 @@
   right: 25%;
 }
 
-.reddit {
-  /*actually discord, but for some bizarre reason it doesn't work in any other way*/
+.discord {
   position: absolute;
   top: 50%;
   right: 25%;
 }
 
-.discord {
-  /*actually projects, but for some bizarre reason it doesn't work in any other way*/
+.projects {
   position: absolute;
   top: 60%;
   right: 25%;
 }
 
-.projects {
-  /*actually about, but for some bizarre reason it doesn't work in any other way*/
+.about {
   position: absolute;
   top: 70%;
   right: 25%;
