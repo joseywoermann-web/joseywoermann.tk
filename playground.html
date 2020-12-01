@@ -93,62 +93,63 @@
 
     <div id="footer-cookie">
         <span id="description">
-          Diese Seite nutzt keine Cookies oder Tracker. (Außer, um disen Banner zu betreiben.) <!-- <a href="https://dakitec.de/blog/cookie-banner-selbst-erstellen">Finde ich gut</a> <a href="https://facebook.com/">Will aber Tracker!</a>-->
+          Diese Seite nutzt keine Cookies oder Tracker. (Außer, um disen Banner zu betreiben.)
         </span>
         <span id="accept"><a href="javascript:void(0)" title="Akzeptieren">Finde ich gut</a></span>
         <span id="accept"><a  target="_blank" href="https://facebook.com/" title="decline">Will aber Tracker!</a></span>
     </div>
 
-      <script src="https://joseywoermann.github.io/assets/js/cookie-banner.js" charset="utf-8"></script>
-      <script>
+
+    <script>
 
       /*Slideshow*/
-        var slideIndex = 0;
-        showSlides();
+      var slideIndex = 0;
+      showSlides();
 
-        function showSlides() {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
 
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-
-          slideIndex++;
-
-          if (slideIndex > slides.length) {
-              slideIndex = 1;
-          }
-
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-
-
-          slides[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 7000); // Change image every 7 seconds
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
         }
 
-/*cookies*/
+        slideIndex++;
 
-        /*var footerCookie = document.querySelector("#footer-cookie");
-        var footerCookieAccept = document.querySelector("#accept");
-
-        if (document.cookie.indexOf("cookiebanner=") == -1) {
-          footerCookie.style.display = "block";
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
         }
 
-        footerCookieAccept.onclick = function(e) {
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 7000); // Change image every 7 seconds
+      }
+
+
+      /*cookies*/
+
+      var footerCookie = document.querySelector("#footer-cookie");
+      var footerCookieAccept = document.querySelector("#accept");
+
+      if (document.cookie.indexOf("cookiebanner=") == -1) {
+        footerCookie.style.display = "block";
+      }
+
+      footerCookieAccept.onclick = function (e) {
         var cookieDate = new Date();
         cookieDate.setTime(new Date().getTime() + 86400000); // shows up again after 1 day
 
         document.cookie = "cookiebanner = 1; path=/; secure; expires=" + cookieDate.toUTCString();
 
         footerCookie.style.display = "none";
-      };*/
-      </script>
+      };
+
+    </script>
 
 <!-- end slideshow -->
 
