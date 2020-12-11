@@ -1,3 +1,13 @@
-# Hello there
+# My personal website
 
-I don't know what I should write here, beside that you should totally visit my [Website](https://joseywoermann.github.io/). It's ***a bit*** empty right now.
+### This repository contains all files and code that togehter makes my [Website](https://joseywoermann.github.io/)
+
+## Official web adresses:
+ * [joseywoermann.github.io](https://joseywoermann.github.io/)
+ * [joseywoermann.tk](http://joseywoermann.tk/)
+
+### These URLs work as well : 
+ * [joseywoermann.cf](http://joseywoermann.cf/)
+ * [joseywoermann.ga](http://joseywoermann.ga/)
+ * [joseywoermann.gq](http://joseywoermann.gq/)
+ * [joseywoermann.ml](http://joseywoermann.ml/)
