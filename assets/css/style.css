@@ -252,15 +252,7 @@ img {
 }*/
 
 
-.repository-box {
-  background-color: #25282b;
-  border: 2px solid #e1e4e8;
-  border-radius: 8px;
-  display: inline-block;
-  margin: 5px;
-  padding: 10px;
-  width: 26vw;
-}
+
 
 .headline {
   position: absolute;
@@ -291,10 +283,38 @@ img {
   line-height: 22px;
 }
 
+/*Mobile optimizations*/
 
 @media screen and (max-width: 1441px) {
   #header {
     display: none;
+  }
+}
+
+
+/*###Desktops, big landscape tablets and laptops(Large, Extra large)####*/
+@media screen and (min-width: 1442px){
+  .repository-box {
+    background-color: #25282b;
+    border: 2px solid #e1e4e8;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    width: 26vw;
+  }
+}
+
+/*### Smartphones (portrait and landscape)(small)### */
+@media screen and (min-width : 0px) and (max-width : 1441px){
+  .repository-box {
+    background-color: #25282b;
+    border: 2px solid #e1e4e8;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    width: 50vw;
   }
 }
 
