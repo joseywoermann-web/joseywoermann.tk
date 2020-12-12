@@ -53,49 +53,6 @@
 
 /*end startpage-links*/
 
-/*temporary page*/
-
-.welcome {
-  position: absolute;
-  top: 30%;
-  right: 50%;
-}
-
-#nothing-here {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #3e3e3e;
-  min-width: 80px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 16px;
-  z-index: 1;
-}
-
-.dropdown-content {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-
-  line-height: 37px;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/*end temporary page*/
 
 /*about*/
 
@@ -297,12 +254,12 @@ img {
 
 .repository-box {
   background-color: #25282b;
-  border: 1px solid #e1e4e8;
-  border-radius: 6px;
+  border: 2px solid #e1e4e8;
+  border-radius: 8px;
   display: inline-block;
   margin: 5px;
   padding: 10px;
-  width: 20vw;
+  width: 26vw;
 }
 
 .headline {
@@ -317,7 +274,7 @@ img {
   right: 15%;
 }
 
-#pystore-box {
+#vertretungsplan-app-box {
   position: absolute;
   top: 50%;
   right: 15%;
@@ -332,6 +289,13 @@ img {
 .repo-description {
   font-size: 15pt;
   line-height: 22px;
+}
+
+
+@media screen and (max-width: 1441px) {
+  .headline {
+    display: none;
+  }
 }
 
 
