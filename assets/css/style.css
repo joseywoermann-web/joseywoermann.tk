@@ -259,7 +259,7 @@ img {
 @media screen and (min-width: 1442px){
   .repository-box {
     background-color: #25282b;
-    border: 2px solid #e1e4e8;
+    border: 2px solid #ffffff;
     border-radius: 8px;
     display: inline-block;
     margin: 5px;
@@ -302,7 +302,7 @@ img {
 @media screen and (max-width : 1441px){
   .repository-box {
     background-color: #25282b;
-    border: 2px solid #e1e4e8;
+    border: 2px solid #ffffff;
     border-radius: 8px;
     display: inline-block;
     margin: 5px;
