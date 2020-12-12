@@ -281,19 +281,19 @@ img {
   #navnlos-box {
     position: absolute;
     top: 20%;
-    right: 15%;
+    right: 10%;
   }
 
   #vertretungsplan-app-box {
     position: absolute;
     top: 50%;
-    right: 15%;
+    right: 10%;
   }
 
   #rccar-box {
     position: absolute;
     top: 70%;
-    right: 15%;
+    right: 10%;
   }
 }
 
