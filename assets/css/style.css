@@ -330,12 +330,14 @@ img {
     position: absolute;
     /*top: 50%;*/
     right: 10%;
+    display: block;
   }
 
   #rccar-box {
     position: absolute;
     /*top: 70%;*/
     right: 10%;
+    display: block;
   }
 }
 
