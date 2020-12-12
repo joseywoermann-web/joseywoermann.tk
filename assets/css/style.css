@@ -293,7 +293,7 @@ img {
 
 
 @media screen and (max-width: 1441px) {
-  .headline {
+  #header {
     display: none;
   }
 }
