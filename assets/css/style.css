@@ -253,46 +253,7 @@ img {
 
 
 
-
-.headline {
-  position: absolute;
-  top: 50%;
-  left: 15%;
-}
-
-#navnlos-box {
-  position: absolute;
-  top: 20%;
-  right: 15%;
-}
-
-#vertretungsplan-app-box {
-  position: absolute;
-  top: 50%;
-  right: 15%;
-}
-
-#rccar-box {
-  position: absolute;
-  top: 70%;
-  right: 15%;
-}
-
-.repo-description {
-  font-size: 15pt;
-  line-height: 22px;
-}
-
-/*Mobile optimizations*/
-
-@media screen and (max-width: 1441px) {
-  #header {
-    display: none;
-  }
-}
-
-
-/*###Desktops, big landscape tablets and laptops(Large, Extra large)####*/
+/*Desktops*/
 @media screen and (min-width: 1442px){
   .repository-box {
     background-color: #25282b;
@@ -303,10 +264,39 @@ img {
     padding: 10px;
     width: 26vw;
   }
+
+  .repo-description {
+    font-size: 15pt;
+    line-height: 22px;
+  }
+
+  #header {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+  }
+
+  #navnlos-box {
+    position: absolute;
+    top: 20%;
+    right: 15%;
+  }
+
+  #vertretungsplan-app-box {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+  }
+
+  #rccar-box {
+    position: absolute;
+    top: 70%;
+    right: 15%;
+  }
 }
 
-/*### Smartphones (portrait and landscape)(small)### */
-@media screen and (min-width : 0px) and (max-width : 1441px){
+/*Smartphones*/
+@media screen and (max-width : 1441px){
   .repository-box {
     background-color: #25282b;
     border: 2px solid #e1e4e8;
@@ -314,7 +304,34 @@ img {
     display: inline-block;
     margin: 5px;
     padding: 10px;
-    width: 50vw;
+    width: 80vw;
+  }
+
+  .repo-description {
+    font-size: 15pt;
+    line-height: 22px;
+  }
+
+  #header {
+    display: none;
+  }
+
+  #navnlos-box {
+    position: absolute;
+    top: 20%;
+    right: 50%;
+  }
+
+  #vertretungsplan-app-box {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+  }
+
+  #rccar-box {
+    position: absolute;
+    top: 70%;
+    right: 15%;
   }
 }
 
