@@ -308,7 +308,6 @@ img {
     margin: 5px;
     padding: 10px;
     width: 80vw;
-    display: block;
   }
 
   .repo-description {
@@ -323,21 +322,19 @@ img {
   #navnlos-box {
     position: absolute;
     top: 20%;
-    right: 10%;
+    right: 12%;
   }
 
   #vertretungsplan-app-box {
     position: absolute;
-    /*top: 50%;*/
+    top: 50%;
     right: 10%;
-    display: block;
   }
 
   #rccar-box {
     position: absolute;
-    /*top: 70%;*/
-    right: 10%;
-    display: block;
+    top: 70%;
+    right: 15%;
   }
 }
 
