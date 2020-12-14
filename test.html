@@ -37,9 +37,9 @@
           </div>
 
           <div id="vertretungsplan-app-box" class="repository-box">
-            <a class="repo-github-link" target="_blank" href="https://github.com/joseywoermann/vertretungsplan-app/">Vertretungsplan-App</a>
+            <a class="repo-github-link" target="_blank" href="https://github.com/joseywoermann/vertretungsplan-app/">name</a>
             <div class="repo-description">
-              <p>gfckjhgvrbutb5trb  </p>
+              <p>description</p>
             </div>
           </div>
 
@@ -50,7 +50,40 @@
             </div>
           </div>
       </div>
-
     </div>
+
+
+
+
+    <!-- cookies-->
+
+    <div id="footer-cookie">
+      <span id="cookie-description">
+        Diese Seite nutzt keine Cookies oder Tracker. (Außer, um diesen Banner zu betreiben.)
+        <!-- <a href="https://dakitec.de/blog/cookie-banner-selbst-erstellen">Finde ich gut</a> <a href="https://facebook.com/">Will aber Tracker!</a>-->
+      </span>
+      <span id="cookie-accept"><a href="javascript:void(0)" title="Akzeptieren">Finde ich gut</a></span>
+      <span id="cookie-accept"><a target="_blank" href="https://facebook.com/" title="decline">Will aber Tracker!</a></span>
+    </div>
+
+    <!-- cookies-->
+
+    <script>
+      var footerCookie = document.querySelector("#footer-cookie");
+      var footerCookieAccept = document.querySelector("#cookie-accept");
+
+      if (document.cookie.indexOf("cookiebanner=") == -1) {
+        footerCookie.style.display = "block";
+      }
+
+      footerCookieAccept.onclick = function (e) {
+        var cookieDate = new Date();
+        cookieDate.setTime(new Date().getTime() + 86400000); // shows up again after 1 day
+
+        document.cookie = "cookiebanner = 1; path=/; secure; expires=" + cookieDate.toUTCString();
+
+        footerCookie.style.display = "none";
+      };
+    </script>
   </body>
 </html>
