@@ -42,19 +42,19 @@
     <!-- cookies-->
 
     <div id="footer-cookie">
-      <span id="cookie-description">
+      <span id="description">
         Diese Seite nutzt keine Cookies oder Tracker. (Außer, um diesen Banner zu betreiben.)
         <!-- <a href="https://dakitec.de/blog/cookie-banner-selbst-erstellen">Finde ich gut</a> <a href="https://facebook.com/">Will aber Tracker!</a>-->
       </span>
-      <span id="cookie-accept"><a href="javascript:void(0)" title="Akzeptieren">Finde ich gut</a></span>
-      <span id="cookie-accept"><a target="_blank" href="https://facebook.com/" title="decline">Will aber Tracker!</a></span>
+      <span id="accept"><a href="javascript:void(0)" title="Akzeptieren">Finde ich gut</a></span>
+      <span id="accept"><a target="_blank" href="https://facebook.com/" title="decline">Will aber Tracker!</a></span>
     </div>
 
     <!-- cookies-->
 
     <script>
       var footerCookie = document.querySelector("#footer-cookie");
-      var footerCookieAccept = document.querySelector("#cookie-accept");
+      var footerCookieAccept = document.querySelector("#accept");
 
       if (document.cookie.indexOf("cookiebanner=") == -1) {
         footerCookie.style.display = "block";

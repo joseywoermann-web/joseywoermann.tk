@@ -1,66 +1,4 @@
-/*Desktops*/
-@media screen and (min-width: 1442px){
-
-  /*ABOUT-PAGE*/
-  .about-me {
-    position: absolute;
-    top: 10vh;
-    margin-right: 5vw;
-    font-size: 25pt;
-  }
-
-  #link {
-    text-decoration: underline; /*underline links*/
-  }
-
-  div.footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #25282b;
-    color: white;
-    /*text-align: center;*/
-    border: 3px solid white;
-    border-radius: 8px;
-  }
-}
-
-
-/*Smartphones*/
-@media screen and (max-width : 1441px){
-
-  /*ABOUT-PAGE*/
-  .about-me {
-    position: absolute;
-    top: 10vh;
-    margin-right: 5vw;
-    font-size: 30pt;
-  }
-
-  #link {
-    text-decoration: underline; /*underline links*/
-  }
-
-  div.footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #25282b;
-    color: white;
-    /*text-align: center;*/
-    border: 3px solid white;
-    border-radius: 8px;
-  }
-}
-
-
-
-
-
-
-
+/*padding: top right bottom left; */
 
 /*import font*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
@@ -116,9 +54,38 @@
 /*end startpage-links*/
 
 
+/*about*/
 
+.about-me {
+  position: absolute;
+  top: 10vh;
+  margin-right: 5vw;
+  /*margin-top: 5%;*/ /*make space from the top of the page*/
+  font-size: 25pt;
+}
 
+/* On smaller screens, increase text size */
+@media only screen and (max-width: 1441px) {
+  .about-me {
+    font-size: 30pt;
+  }
+}
 
+#link {
+  text-decoration: underline; /*underline links*/
+}
+
+div.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #25282b;
+  color: white;
+  /*text-align: center;*/
+  border: 3px solid white;
+  border-radius: 8px;
+}
 
 /*end about*/
 
@@ -201,7 +168,7 @@ img {
   color: #ffffff;
 }
 
-#cookie-accept {
+#accept {
   margin-top: 3px;
   margin-bottom: 3px;
   margin-right: 3px;
@@ -210,17 +177,17 @@ img {
   background: #25282b;
 }
 
-#cookie-description {
+#footer-cookie #description {
   float: left;
 
   background: #25282b;
 }
 
-#cookie-accept {
+#footer-cookie #accept {
   float: right;
 }
 
-#cookie-accept a {
+#footer-cookie #accept a {
   border: 2px solid #ffffff;
   padding: 5px 10px;
   text-decoration: none;
@@ -235,16 +202,16 @@ img {
     height: auto;
   }
 
-#cookie-description {
+  #footer-cookie #description {
     width: 100%;
   }
 
-#cookie-accept {
+  #footer-cookie #accept {
     width: 100%;
     margin-top: 15px;
   }
 
-#cookie-accept a {
+  #footer-cookie #accept a {
     width: 100%;
     display: block;
     text-align: center;
@@ -325,7 +292,7 @@ img {
 
   #rccar-box {
     position: absolute;
-    top: 75%;
+    top: 70%;
     right: 10%;
   }
 }
@@ -366,7 +333,7 @@ img {
 
   #rccar-box {
     position: absolute;
-    top: 75%;
+    top: 70%;
     right: 15%;
   }
 }

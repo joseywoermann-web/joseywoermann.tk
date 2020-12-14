@@ -37,35 +37,35 @@
           <p>Hello there!</p>
           <br />
           <p>My name is Josey Wörmann, and it looks like you are one of the three people that actually read "about"-pages.</p>
-          <br>
           <p>
             This website does not focus on anything in paticular, its main purpose is to serve as a personal homepage, and present my
             <a style="text-decoration: underline;" target="_blank" href="https://joseywoermann.github.io/projects/">projects</a>
             .<!-- It also contains a <a style="text-decoration: underline;" target="_blank" href="https//joseywoermann.github.io/gallery/">gallery</a> with some of my best photos.-->
           </p>
+          <p></p>
         </div>
       </div>
-      <!--<div class="footer">
+      <div class="footer">
         <p>test</p>
-      </div>-->
+      </div>
     </div>
 
     <!-- cookies-->
 
     <div id="footer-cookie">
-      <span id="cookie-description">
+      <span id="description">
         Diese Seite nutzt keine Cookies oder Tracker. (Außer, um diesen Banner zu betreiben.)
         <!-- <a href="https://dakitec.de/blog/cookie-banner-selbst-erstellen">Finde ich gut</a> <a href="https://facebook.com/">Will aber Tracker!</a>-->
       </span>
-      <span id="cookie-accept"><a href="javascript:void(0)" title="Akzeptieren">Finde ich gut</a></span>
-      <span id="cookie-accept"><a target="_blank" href="https://facebook.com/" title="decline">Will aber Tracker!</a></span>
+      <span id="accept"><a href="javascript:void(0)" title="Akzeptieren">Finde ich gut</a></span>
+      <span id="accept"><a target="_blank" href="https://facebook.com/" title="decline">Will aber Tracker!</a></span>
     </div>
 
     <!-- cookies-->
 
     <script>
       var footerCookie = document.querySelector("#footer-cookie");
-      var footerCookieAccept = document.querySelector("#cookie-accept");
+      var footerCookieAccept = document.querySelector("#accept");
 
       if (document.cookie.indexOf("cookiebanner=") == -1) {
         footerCookie.style.display = "block";
