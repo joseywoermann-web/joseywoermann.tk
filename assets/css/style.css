@@ -1,4 +1,66 @@
-/*padding: top right bottom left; */
+/*Desktops*/
+@media screen and (min-width: 1442px){
+
+  /*ABOUT-PAGE*/
+  .about-me {
+    position: absolute;
+    top: 10vh;
+    margin-right: 5vw;
+    font-size: 25pt;
+  }
+
+  #link {
+    text-decoration: underline; /*underline links*/
+  }
+
+  div.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #25282b;
+    color: white;
+    /*text-align: center;*/
+    border: 3px solid white;
+    border-radius: 8px;
+  }
+}
+
+
+/*Smartphones*/
+@media screen and (max-width : 1441px){
+
+  /*ABOUT-PAGE*/
+  .about-me {
+    position: absolute;
+    top: 10vh;
+    margin-right: 5vw;
+    font-size: 30pt;
+  }
+
+  #link {
+    text-decoration: underline; /*underline links*/
+  }
+
+  div.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #25282b;
+    color: white;
+    /*text-align: center;*/
+    border: 3px solid white;
+    border-radius: 8px;
+  }
+}
+
+
+
+
+
+
+
 
 /*import font*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
@@ -54,38 +116,9 @@
 /*end startpage-links*/
 
 
-/*about*/
 
-.about-me {
-  position: absolute;
-  top: 10vh;
-  margin-right: 5vw;
-  /*margin-top: 5%;*/ /*make space from the top of the page*/
-  font-size: 25pt;
-}
 
-/* On smaller screens, increase text size */
-@media only screen and (max-width: 1441px) {
-  .about-me {
-    font-size: 30pt;
-  }
-}
 
-#link {
-  text-decoration: underline; /*underline links*/
-}
-
-div.footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #25282b;
-  color: white;
-  /*text-align: center;*/
-  border: 3px solid white;
-  border-radius: 8px;
-}
 
 /*end about*/
 
@@ -168,7 +201,7 @@ img {
   color: #ffffff;
 }
 
-#accept {
+#cookie-accept {
   margin-top: 3px;
   margin-bottom: 3px;
   margin-right: 3px;
@@ -177,17 +210,17 @@ img {
   background: #25282b;
 }
 
-#footer-cookie #description {
+#cookie-description {
   float: left;
 
   background: #25282b;
 }
 
-#footer-cookie #accept {
+#cookie-accept {
   float: right;
 }
 
-#footer-cookie #accept a {
+#cookie-accept a {
   border: 2px solid #ffffff;
   padding: 5px 10px;
   text-decoration: none;
@@ -202,16 +235,16 @@ img {
     height: auto;
   }
 
-  #footer-cookie #description {
+#cookie-description {
     width: 100%;
   }
 
-  #footer-cookie #accept {
+#cookie-accept {
     width: 100%;
     margin-top: 15px;
   }
 
-  #footer-cookie #accept a {
+#cookie-accept a {
     width: 100%;
     display: block;
     text-align: center;

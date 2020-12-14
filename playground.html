@@ -83,11 +83,11 @@
     <!-- cookies-->
 
     <div id="footer-cookie">
-      <span id="description">
+      <span id="cookie-description">
         Diese Seite nutzt keine Cookies oder Tracker. (Außer, um diesen Banner zu betreiben.)
       </span>
-      <span id="accept"><a href="javascript:void(0)" title="Akzeptieren">Finde ich gut</a></span>
-      <span id="accept"><a target="_blank" href="https://facebook.com/" title="decline">Will aber Tracker!</a></span>
+      <span id="cookie-accept"><a href="javascript:void(0)" title="Akzeptieren">Finde ich gut</a></span>
+      <span id="cookie-accept"><a target="_blank" href="https://facebook.com/" title="decline">Will aber Tracker!</a></span>
     </div>
 
     <script>
@@ -122,7 +122,7 @@
       /*cookies*/
 
       var footerCookie = document.querySelector("#footer-cookie");
-      var footerCookieAccept = document.querySelector("#accept");
+      var footerCookieAccept = document.querySelector("#cookie-accept");
 
       if (document.cookie.indexOf("cookiebanner=") == -1) {
         footerCookie.style.display = "block";
