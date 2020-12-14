@@ -1,3 +1,59 @@
+
+
+
+/*import font*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  /*background-image: url("https://raw.githubusercontent.com/joseywoermann/joseywoermann.github.io/master/assets/images/background.jpg"); /*original: https://i.pinimg.com/originals/6a/28/9c/6a289c0fa41e89fb24157e34b1237592.jpg*/
+}
+
+.wrapper {
+  font-size: 28pt;
+  line-height: 35px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+/*startpage-links*/
+
+.twitter {
+  position: absolute;
+  top: 30%;
+  right: 25%;
+}
+
+.instagram {
+  position: absolute;
+  top: 40%;
+  right: 25%;
+}
+
+.discord {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+}
+
+.projects {
+  position: absolute;
+  top: 60%;
+  right: 25%;
+}
+
+.about {
+  position: absolute;
+  top: 70%;
+  right: 25%;
+}
+
+/*end startpage-links*/
+
 /*Desktops*/
 @media screen and (min-width: 1442px){
 
@@ -58,62 +114,6 @@
 
 
 
-
-
-
-
-/*import font*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  /*background-image: url("https://raw.githubusercontent.com/joseywoermann/joseywoermann.github.io/master/assets/images/background.jpg"); /*original: https://i.pinimg.com/originals/6a/28/9c/6a289c0fa41e89fb24157e34b1237592.jpg*/
-}
-
-.wrapper {
-  font-size: 28pt;
-  line-height: 35px;
-  margin: 0 auto;
-  width: 90%;
-}
-
-/*startpage-links*/
-
-.twitter {
-  position: absolute;
-  top: 30%;
-  right: 25%;
-}
-
-.instagram {
-  position: absolute;
-  top: 40%;
-  right: 25%;
-}
-
-.discord {
-  position: absolute;
-  top: 50%;
-  right: 25%;
-}
-
-.projects {
-  position: absolute;
-  top: 60%;
-  right: 25%;
-}
-
-.about {
-  position: absolute;
-  top: 70%;
-  right: 25%;
-}
-
-/*end startpage-links*/
 
 
 
