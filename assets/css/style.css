@@ -1,6 +1,3 @@
-
-
-
 /*import font*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 
@@ -18,6 +15,15 @@
   line-height: 35px;
   margin: 0 auto;
   width: 90%;
+}
+
+.coming-soon {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: 37vw;
 }
 
 /*startpage-links*/
@@ -54,77 +60,38 @@
 
 /*end startpage-links*/
 
-/*Desktops*/
-@media screen and (min-width: 1442px){
 
-  /*ABOUT-PAGE*/
-  .about-me {
-    position: absolute;
-    top: 10vh;
-    margin-right: 5vw;
-    font-size: 25pt;
-    line-height: 35px;
-  }
 
-  #link {
-    text-decoration: underline; /*underline links*/
-  }
 
-  div.footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #25282b;
-    color: white;
-    /*text-align: center;*/
-    border: 3px solid white;
-    border-radius: 8px;
-  }
+
+/*formatting of links*/
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
 }
 
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
 
-/*Smartphones*/
-@media screen and (max-width : 1441px){
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
 
-  /*ABOUT-PAGE*/
-  .about-me {
-    position: absolute;
-    top: 10vh;
-    margin-right: 5vw;
-    font-size: 30pt;
-    line-height: 40px;
-  }
-
-  #link {
-    text-decoration: underline; /*underline links*/
-  }
-
-  div.footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #25282b;
-    color: white;
-    /*text-align: center;*/
-    border: 3px solid white;
-    border-radius: 8px;
-  }
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 
 
 
-
-
-
-
-
-
-/*end about*/
-
-/*home*/
 
 /*slideshow*/
 
@@ -180,105 +147,6 @@ img {
 
 /*end slideshow*/
 
-/*end home*/
-
-/*cookies*/
-
-#footer-cookie {
-  color: white;
-  font-size: 15pt;
-  font-family: "Montserrat", sans-serif;
-  line-height: 15px;
-
-  display: none;
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  height: 60px;
-  padding-left: 30px;
-  padding-right: 30px;
-  line-height: 60px;
-  background: #25282b;
-  color: #ffffff;
-}
-
-#cookie-accept {
-  margin-top: 3px;
-  margin-bottom: 3px;
-  margin-right: 3px;
-  margin-left: 3px;
-  float: right;
-
-  background: #25282b;
-}
-
-#cookie-description {
-  float: left;
-
-  background: #25282b;
-}
-
-#cookie-accept a {
-  border: 2px solid #ffffff;
-  padding: 5px 10px;
-  text-decoration: none;
-  background: #25282b;
-}
-
-@media (max-width: 1441px) {
-  #footer-cookie {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    line-height: inherit;
-    height: auto;
-  }
-
-#cookie-description {
-    width: 100%;
-  }
-
-#cookie-accept {
-    width: 100%;
-    margin-top: 15px;
-  }
-
-#cookie-accept a {
-    width: 100%;
-    display: block;
-    text-align: center;
-  }
-}
-
-/*cookies*/
-
-/*coming soon*/
-.coming-soon {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  margin-left: 37vw;
-}
-
-/*end of coming soon*/
-
-
-
-
-
-
-
-
-
-#background-image {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-
 
 
 
@@ -289,6 +157,33 @@ img {
 
 /*Desktops*/
 @media screen and (min-width: 1442px){
+
+  .about-me {
+    position: absolute;
+    top: 10vh;
+    margin-right: 5vw;
+    font-size: 25pt;
+    line-height: 35px;
+  }
+
+  #link {
+    text-decoration: underline; /*underline links*/
+  }
+
+  div.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #25282b;
+    color: white;
+    /*text-align: center;*/
+    border: 3px solid white;
+    border-radius: 8px;
+  }
+
+
+
   .repository-box {
     background-color: #25282b;
     border: 2px solid #ffffff;
@@ -327,11 +222,39 @@ img {
     top: 75%;
     right: 10%;
   }
+
 }
 
 
 /*Smartphones*/
 @media screen and (max-width : 1441px){
+
+  .about-me {
+    position: absolute;
+    top: 10vh;
+    margin-right: 5vw;
+    font-size: 30pt;
+    line-height: 40px;
+  }
+
+  #link {
+    text-decoration: underline; /*underline links*/
+  }
+
+  div.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #25282b;
+    color: white;
+    /*text-align: center;*/
+    border: 3px solid white;
+    border-radius: 8px;
+  }
+
+
+
   .repository-box {
     background-color: #25282b;
     border: 2px solid #ffffff;
@@ -368,33 +291,86 @@ img {
     top: 75%;
     right: 15%;
   }
+
 }
 
 
 
 
 
-/*formatting of links*/
-a:link {
+
+
+
+
+
+
+
+
+
+/*cookies*/
+
+#footer-cookie {
   color: white;
-  background-color: transparent;
-  text-decoration: none;
+  font-size: 15pt;
+  line-height: 15px;
+
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 60px;
+  background: #25282b;
 }
 
-a:visited {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
+#cookie-description {
+  float: left;
+  background: #25282b;
 }
 
-a:hover {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
+#cookie-accept {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  float: right;
+
+  background: #25282b;
 }
 
-a:active {
-  color: white;
-  background-color: transparent;
+#cookie-accept a {
+  border: 2px solid #ffffff;
+  padding: 5px 10px;
   text-decoration: none;
+  background: #25282b;
+}
+
+
+
+
+/*mobile*/
+@media screen and (max-width: 1441px) {
+  #footer-cookie {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: inherit;
+    height: auto;
+  }
+
+  #cookie-description {
+    width: 100%;
+  }
+
+  #cookie-accept {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  #cookie-accept a {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
 }
