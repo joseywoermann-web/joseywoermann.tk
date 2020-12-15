@@ -104,7 +104,6 @@ img {
 }
 
 /* Slideshow container */
-
 .slideshow-container {
   max-width: 30%; /*30% der Bildschirmbreite*/
   position: absolute;
@@ -203,6 +202,7 @@ img {
     position: absolute;
     top: 50%;
     left: 15%;
+    font-size: 28pt;
   }
 
   #navnlos-box {
