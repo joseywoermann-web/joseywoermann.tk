@@ -246,6 +246,7 @@ img {
     margin-right: 5vw;
     font-size: 23pt;
     line-height: 40px;
+    text-align: right;
   }
 
   #hello-there {
