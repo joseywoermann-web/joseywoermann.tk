@@ -170,6 +170,11 @@ img {
     max-width: 35vw;
   }
 
+  #hello-there {
+    font-size: 40pt;
+    line-height: 40px;
+  }
+
   #link {
     text-decoration: underline; /*underline links*/
   }
@@ -239,7 +244,12 @@ img {
     top: 25vh;
     right: 0vw;
     margin-right: 5vw;
-    font-size: 15pt;
+    font-size: 20pt;
+    line-height: 40px;
+  }
+
+  #hello-there {
+    font-size: 30pt;
     line-height: 40px;
   }
 
