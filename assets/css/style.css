@@ -160,9 +160,6 @@ img {
   .about-me {
     position: absolute;
     top: 25vh;
-    /*top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);*/
     right: 0vw;
     margin-right: 5vw;
     font-size: 25pt;
@@ -242,7 +239,6 @@ img {
   .about-me {
     position: absolute;
     top: 10vh;
-    /*right: 0vw;*/
     margin-right: 5vw;
     font-size: 23pt;
     line-height: 40px;
