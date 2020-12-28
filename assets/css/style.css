@@ -394,6 +394,6 @@ img {
     top: 50%;
     -ms-transform: translateY(-50%, -50%);
     transform: translateY(-50%, -50%);
-    font-size: 23pt;
+    font-size: 20pt;
   }
 }
