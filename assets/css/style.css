@@ -17,13 +17,7 @@
   width: 90%;
 }
 
-#countdown {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%, -50%);
-  transform: translateY(-50%, -50%);
-}
+
 
 /*startpage-links*/
 
@@ -229,6 +223,13 @@ img {
     right: 10%;
   }
 
+  #countdown {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%, -50%);
+    transform: translateY(-50%, -50%);
+  }
 }
 
 
@@ -385,5 +386,14 @@ img {
     width: 100%;
     display: block;
     text-align: center;
+  }
+
+  #countdown {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%, -50%);
+    transform: translateY(-50%, -50%);
+    font-size: 23pt;
   }
 }
