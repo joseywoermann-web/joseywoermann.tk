@@ -17,13 +17,12 @@
   width: 90%;
 }
 
-.coming-soon {
+#countdown {
   margin: 0;
   position: absolute;
   top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  margin-left: 37vw;
+  -ms-transform: translateY(-50%, -50%);
+  transform: translateY(-50%, -50%);
 }
 
 /*startpage-links*/
