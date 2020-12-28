@@ -207,7 +207,8 @@ img {
 
   #navnlos-box {
     position: absolute;
-    top: 15%;
+    /*top: 15%;*/
+    top: 30%;
     right: 10%;
   }
 
@@ -219,7 +220,8 @@ img {
 
   #rccar-box {
     position: absolute;
-    top: 75%;
+    /*top: 75%;*/
+    top: 70%;
     right: 10%;
   }
 
@@ -242,7 +244,7 @@ img {
     margin-right: 5vw;
     font-size: 23pt;
     line-height: 40px;
-    text-align: right;
+    text-align: left;
   }
 
   #hello-there {
@@ -290,7 +292,8 @@ img {
 
   #navnlos-box {
     position: absolute;
-    top: 15%;
+    /*top: 15%;*/
+    top: 30%;
     right: 10%;
   }
 
@@ -302,22 +305,12 @@ img {
 
   #rccar-box {
     position: absolute;
-    top: 75%;
+    /*top: 75%;*/
+    top: 70%;
     right: 10%;
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
