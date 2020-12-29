@@ -226,6 +226,34 @@ img {
     top: 50%;
     left: 15%;
     font-size: 28pt;
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.4s both;
+  }
+
+  #navnlos-box {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.6s both;
+  }
+
+  #rccar-box {
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.8s both;
+  }
+
+  #see-all-box {
+    position: absolute;
+    top: 75%;
+    right: 10%;
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.0s both;
+  }
+/*#header {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    font-size: 28pt;
     animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.3s both;
   }
 
@@ -248,8 +276,7 @@ img {
     top: 75%;
     right: 10%;
     animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.7s both;
-  }
-
+  }*/
   #countdown {
     margin: 0;
     position: absolute;
@@ -319,21 +346,21 @@ img {
     position: absolute;
     top: 15%;
     right: 10%;
-    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.3s both;
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.6s both;
   }
 
   #rccar-box {
     position: absolute;
     top: 45%;
     right: 10%;
-    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.4s both;
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.8s both;
   }
 
   #see-all-box {
     position: absolute;
     top: 75%;
     right: 10%;
-    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.5s both;
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.0s both;
   }
 }
 
