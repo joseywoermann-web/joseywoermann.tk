@@ -83,6 +83,29 @@ a:active {
 }
 
 
+/*fade in animation*/
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+@keyframes slide-in-fwd-center {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 
 
 
@@ -203,24 +226,28 @@ img {
     top: 50%;
     left: 15%;
     font-size: 28pt;
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.3s both;
   }
 
   #navnlos-box {
     position: absolute;
     top: 15%;
     right: 10%;
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.5s both;
   }
 
   #rccar-box {
     position: absolute;
     top: 45%;
     right: 10%;
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.6s both;
   }
 
   #see-all-box {
     position: absolute;
     top: 75%;
     right: 10%;
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.7s both;
   }
 
   #countdown {
