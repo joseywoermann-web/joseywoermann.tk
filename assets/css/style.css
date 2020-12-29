@@ -207,21 +207,19 @@ img {
 
   #navnlos-box {
     position: absolute;
-    /*top: 15%;*/
-    top: 30%;
-    right: 10%;
-  }
-
-  #pystore-box {
-    position: absolute;
-    top: 45%;
+    top: 15%;
     right: 10%;
   }
 
   #rccar-box {
     position: absolute;
-    /*top: 75%;*/
-    top: 65%;
+    top: 45%;
+    right: 10%;
+  }
+
+  #see-all-box {
+    position: absolute;
+    top: 75%;
     right: 10%;
   }
 
@@ -292,24 +290,21 @@ img {
 
   #navnlos-box {
     position: absolute;
-    /*top: 15%;*/
-    top: 30%;
-    right: 10%;
-  }
-
-  #pystore-box {
-    position: absolute;
-    top: 45%;
+    top: 15%;
     right: 10%;
   }
 
   #rccar-box {
     position: absolute;
-    /*top: 75%;*/
-    top: 65%;
+    top: 45%;
     right: 10%;
   }
 
+  #see-all-box {
+    position: absolute;
+    top: 75%;
+    right: 10%;
+  }
 }
 
 
