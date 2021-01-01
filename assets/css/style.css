@@ -16,6 +16,16 @@
   width: 90%;
 }
 
+#profile-pic {
+  width: 50px;
+}
+#button-root {
+  background-color: transparent;
+  border: none;
+  padding: 20px;
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.4s both;
+}
+
 
 
 /*startpage-links*/
