@@ -341,8 +341,7 @@ img {
 
   #button-root {
     position: absolute;
-    -ms-transform: translateY(-50%, -50%);
-    transform: translateY(-50%, -50%);
+    margin: 0 auto;
     background-color: transparent;
     border: none;
     padding: 20px;
