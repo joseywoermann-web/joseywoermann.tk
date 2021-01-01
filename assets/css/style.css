@@ -341,7 +341,7 @@ img {
 
   #button-root {
     position: absolute;
-    margin: 0 auto;
+    right: 40%;
     background-color: transparent;
     border: none;
     padding: 20px;
