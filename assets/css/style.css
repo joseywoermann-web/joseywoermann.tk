@@ -7,7 +7,6 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   color: white;
-  /*background-image: url("https://raw.githubusercontent.com/joseywoermann/joseywoermann.github.io/master/assets/images/background.jpg"); /*original: https://i.pinimg.com/originals/6a/28/9c/6a289c0fa41e89fb24157e34b1237592.jpg*/
 }
 
 .wrapper {
@@ -71,7 +70,7 @@ a:visited {
 }
 
 a:hover {
-  color: white;
+  color: #e6e6e6;
   background-color: transparent;
   text-decoration: none;
 }
@@ -84,18 +83,6 @@ a:active {
 
 
 /*fade in animation*/
-@keyframes scale-in-center {
-  0% {
-    transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-
 @keyframes slide-in-fwd-center {
   0% {
     transform: scale(0);
@@ -181,15 +168,12 @@ img {
     font-size: 25pt;
     line-height: 35px;
     max-width: 35vw;
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.6s both;
   }
 
   #hello-there {
     font-size: 40pt;
     line-height: 40px;
-  }
-
-  #link {
-    text-decoration: underline; /*underline links*/
   }
 
   div.footer {
@@ -262,7 +246,6 @@ img {
   }
 }
 
-
 /*Smartphones*/
 @media screen and (max-width : 1441px) {
 
@@ -273,16 +256,12 @@ img {
     font-size: 23pt;
     line-height: 40px;
     text-align: left;
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.6s both;
   }
 
   #hello-there {
     font-size: 35pt;
     line-height: 40px;
-  }
-
-
-  #link {
-    text-decoration: underline; /*underline links*/
   }
 
   div.footer {
@@ -295,8 +274,6 @@ img {
     border: 3px solid white;
     border-radius: 8px;
   }
-
-
 
   .repository-box {
     background-color: #25282b;
