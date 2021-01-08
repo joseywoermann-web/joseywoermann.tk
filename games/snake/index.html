@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://avatars0.githubusercontent.com/u/67111271" />
+
+    <script src="game.js" defer type="module" charset="utf-8"></script>
+
+    <title>snake - joseywoermann</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <meta name="google-site-verification" content="7vUgaPTBjMrK4pi9odfDyQbn6wBBzLDuJVZIA_hy3gQ" />
+    <style media="screen">
+      body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        background-color: #25282b;
+      }
+
+      #game-board {
+        background-color: #cccccc;
+        width: 100vmin;
+        height: 100vmin;
+        display: grid;
+        grid-template-rows: repeat(21, 1fr)
+        grid-template-columns: repeat(21, 1fr)
+      }
+
+      .snake {
+        background-color: #007af5;
+        border: .25vmin solid black;
+      }
+
+      .food {
+        background-color: #f1f500;
+        border: .25vmin solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="game-board">
+    </div>
+  </body>
+</html>
