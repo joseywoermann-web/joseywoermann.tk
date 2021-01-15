@@ -17,7 +17,7 @@
 }
 
 body {
-  background-image: url("/assets/images/wallpaper.jpg");
+  background-image: url("https://joseywoermann.tk/assets/images/wallpaper.jpg");
 }
 
 /*startpage-links*/
@@ -266,7 +266,7 @@ img {
 
   .four-o-four {
     -ms-transform: translateY(-50%, -50%);
-    transform: translateY(-50%, -50%);    
+    transform: translateY(-50%, -50%);
   }
 }
 
