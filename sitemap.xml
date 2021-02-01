@@ -2,21 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://joseywoermann.ml/about/</loc>
-    <lastmod>2021-01-01</lastmod>
+    <lastmod>2021-02-01</lastmod>
   </url>
 
   <url>
     <loc>https://joseywoermann.ml/projects/</loc>
-    <lastmod>2020-11-30</lastmod>
+    <lastmod>2021-01-31</lastmod>
   </url>
 
   <url>
     <loc>https://joseywoermann.ml/get-navnlos/</loc>
-    <lastmod>2020-11-30</lastmod>
+    <lastmod>2021-01-30</lastmod>
   </url>
 
   <url>
     <loc>https://joseywoermann.ml/playground.html</loc>
-    <lastmod>2021-01-01</lastmod>
+    <lastmod>2021-02-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://joseywoermann.ml/blog/</loc>
+    <lastmod>2021-02-01</lastmod>
   </url>
 </urlset>
