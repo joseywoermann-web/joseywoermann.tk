@@ -159,118 +159,6 @@ img {
 
 
 
-
-
-
-
-
-
-/*Desktops*/
-@media screen and (min-width: 1442px){
-
-  .about-me {
-    position: absolute;
-    top: 25vh;
-    right: 0vw;
-    margin-right: 5vw;
-    font-size: 25pt;
-    line-height: 35px;
-    max-width: 35vw;
-    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.6s both;
-  }
-
-  #hello-there {
-    font-size: 40pt;
-    line-height: 40px;
-  }
-
-  div.footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #131313;
-    color: white;
-    border: 3px solid white;
-    border-radius: 8px;
-  }
-
-
-
-  .repository-box {
-    background-color: #131313;
-    border: 2px solid #ffffff;
-    border-radius: 8px;
-    display: inline-block;
-    margin: 5px;
-    padding: 10px;
-    width: 26vw;
-  }
-
-  #repo-description {
-    margin-top: 2%;
-    font-size: 15pt;
-    line-height: 22px;
-  }
-
-  #header {
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    font-size: 28pt;
-    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.4s both;
-  }
-
-  #navnlos-box {
-    position: absolute;
-    top: 15%;
-    right: 10%;
-    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.6s both;
-    background-color: #131313;
-  }
-
-  #rccar-box {
-    position: absolute;
-    top: 45%;
-    right: 10%;
-    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.8s both;
-    background-color: #131313;
-  }
-
-  #see-all-box {
-    position: absolute;
-    top: 75%;
-    right: 10%;
-    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.0s both;
-    background-color: #131313;
-  }
-
-  #countdown {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-
-  #profile-pic {
-    width: 50px;
-  }
-
-  #button-root {
-    background-color: transparent;
-    border: none;
-    padding: 20px;
-    animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.4s both;
-  }
-
-  .four-o-four {
-    -ms-transform: translateY(-50%, -50%);
-    transform: translateY(-50%, -50%);
-  }
-}
-
 /*Smartphones*/
 @media screen and (max-width : 1441px) {
 
@@ -356,6 +244,48 @@ img {
     padding: 20px;
     animation: slide-in-fwd-center 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.4s both;
   }
+}
+
+
+
+/*cookies*/
+
+#footer-cookie {
+  color: white;
+  font-size: 15pt;
+  line-height: 15px;
+
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 60px;
+  background: #131313;
+}
+
+#cookie-description {
+  float: left;
+  background: #131313;
+}
+
+#cookie-accept {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  float: right;
+
+  background: #131313;
+}
+
+#cookie-accept a {
+  border: 2px solid #ffffff;
+  padding: 5px 10px;
+  text-decoration: none;
+  background: #131313;
 }
 
 
