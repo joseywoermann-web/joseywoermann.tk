@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="https://avatars0.githubusercontent.com/u/67111271" />
@@ -8,98 +8,58 @@
     <link rel="stylesheet" href="assets/css/desktop.css" />
     <link rel="stylesheet" href="assets/css/mobile.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-
-    <style media="screen">
-
-      * {
-        box-sizing: border-box;
-      }
+    <style>
       .wrapper_tmp {
         font-size: 28pt;
         line-height: 35px;
         margin: 0 auto;
         width: 90%;
         height: 90%;
-        background-color: white;
       }
 
-      .heading_tmp {
-        /*margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);*/
-
-        float: left;
-        width: 45%;
-        height: 100%;
-        text-align: center;
-        background-color: black;
+      .header {
+        grid-area: header_area;
       }
 
-      .content_tmp {
-        /*margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
+      .content {
+        grid-area: content_area;
+      }
 
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);*/
+      .item {
+        /*max-width: 45%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);*/
+      }
 
-        float: left;
-        width: 45%;
-        padding-left: 20px;
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "header_area content_area"
+          "header_area content_area"
+          "header_area content_area";
+        grid-template-columns: 1fr fit-content(50%);
+        grid-gap: 10px;
+        padding: 10px;
+      }
+
+      .grid-container > div {
         text-align: center;
-        background-color: black;
-        padding: 0px 100px;
+        padding: 20px 0;
+        font-size: 30px;
+        /*background-color: white;*/
       }
     </style>
   </head>
-
   <body>
-    <button id="button-root" onclick="location.href='https://joseywoermann.ml/'">
-      <img id="profile-pic" src="https://joseywoermann.ml/assets/images/profilepicture.png" />
-    </button>
-
     <div class="wrapper_tmp">
-      <div class="heading_tmp">
-        <p>testheading</p>
-      </div>
-      <div class="content_tmp">
-        <p>testcontent</p>
+      <button id="button-root" onclick="location.href='https://joseywoermann.ml/'">
+        <img id="profile-pic" src="https://joseywoermann.ml/assets/images/profilepicture.png" />
+      </button>
+
+      <div class="grid-container">
+        <div class="header item">testing</div>
+        <div class="content item">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </div>
       </div>
     </div>
-
-    <!-- cookies-->
-
-    <div id="footer-cookie">
-      <span id="cookie-description">
-        this website does not use cookies to track you.
-        <!-- <a href="https://dakitec.de/blog/cookie-banner-selbst-erstellen">I like that.</a> <a href="https://facebook.com/">I want tracker!</a>-->
-      </span>
-      <span id="cookie-accept"><a href="javascript:void(0)" title="accept">i like that.</a></span>
-      <span id="cookie-accept"><a target="_blank" href="https://facebook.com/" title="decline">i want tracker!</a></span>
-    </div>
-
-    <!-- cookies-->
-
-    <script>
-      var footerCookie = document.querySelector("#footer-cookie");
-      var footerCookieAccept = document.querySelector("#cookie-accept");
-
-      if (document.cookie.indexOf("cookiebanner=") == -1) {
-        footerCookie.style.display = "block";
-      }
-
-      footerCookieAccept.onclick = function (e) {
-        var cookieDate = new Date();
-        cookieDate.setTime(new Date().getTime() + 86400000); // shows up again after 1 day
-
-        document.cookie = "cookiebanner = 1; path=/; secure; expires=" + cookieDate.toUTCString();
-
-        footerCookie.style.display = "none";
-      };
-    </script>
   </body>
 </html>
