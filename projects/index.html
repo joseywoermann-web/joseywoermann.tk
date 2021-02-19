@@ -3,17 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="https://avatars0.githubusercontent.com/u/67111271" />
-    <title>coming soon - joseywoermann</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/desktop.css" />
-    <link rel="stylesheet" href="/assets/css/mobile.css" />
-    <link rel="stylesheet" href="/assets/css/main.css" />
+    <title>projects - joseywoermann</title>
+    <link rel="stylesheet" href="assets/css/desktop.css" />
+    <link rel="stylesheet" href="assets/css/mobile.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="projects - joseywoermann" />
-    <meta property="og:description" content="An overview over some of my projects." />
-    <meta name="description" content="An overview over some of my projects." />
-    <meta property="og:url" content="https://joseywoermann.github.io/projects/" />
+    <meta property="og:title" content="home - joseywoermann" />
+    <meta property="og:description" content="I could put a description here, but I don't want to." />
+    <meta name="description" content="I could put a description here, but I don't want to." />
+    <meta property="og:url" content="https://joseywoermann.github.io/playground/" />
     <meta property="og:image" content="https://avatars0.githubusercontent.com/u/67111271" />
   </head>
 
@@ -23,40 +24,17 @@
     </button>
 
     <div class="wrapper">
-      <div class="coming-soon">
-        <a href="https://joseywoermann.github.io/">Coming Soon</a>
+
+      <div class="headline">
+        <p id="header">projects</p>
+      </div>
+
+      <div class="repositories">
+          <a id="navnlos-box" class="repository-box" target="_blank" href="https://github.com/joseywoermann/navnlos/">navnløs<br><p id="repo-description">a multi-purpose discord bot.</p></a>
+          <a id="rccar-box" class="repository-box" target="_blank" href="https://github.com/therealmistericraft/RCCar/">RCCar<br><p id="repo-description">software for a small remote controlled car</p></a>
+          <a id="see-all-box" class="repository-box" target="_blank" href="https://github.com/joseywoermann/?tab=repositories">view all<br><p id="repo-description">view all projects on GitHub</p></a>
       </div>
     </div>
 
-    <!-- cookies-->
-
-    <div id="footer-cookie">
-      <span id="cookie-description">
-        this website does not use cookies to track you.
-        <!-- <a href="https://dakitec.de/blog/cookie-banner-selbst-erstellen">I like that.</a> <a href="https://facebook.com/">I want tracker!</a>-->
-      </span>
-      <span id="cookie-accept"><a href="javascript:void(0)" title="Akzeptieren">I like that.</a></span>
-      <span id="cookie-accept"><a target="_blank" href="https://facebook.com/" title="decline">I want tracker!</a></span>
-    </div>
-
-    <!-- cookies-->
-
-    <script>
-      var footerCookie = document.querySelector("#footer-cookie");
-      var footerCookieAccept = document.querySelector("#cookie-accept");
-
-      if (document.cookie.indexOf("cookiebanner=") == -1) {
-        footerCookie.style.display = "block";
-      }
-
-      footerCookieAccept.onclick = function (e) {
-        var cookieDate = new Date();
-        cookieDate.setTime(new Date().getTime() + 86400000); // shows up again after 1 day
-
-        document.cookie = "cookiebanner = 1; path=/; secure; expires=" + cookieDate.toUTCString();
-
-        footerCookie.style.display = "none";
-      };
-    </script>
   </body>
 </html>
