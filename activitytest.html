@@ -16,13 +16,9 @@
 
       $.getJSON(url, function(data) {
         console.log("getJSON executed")
-        //console.log(data)
-        // print every name
-        console.log(data['data']['activities'][0]['name'])
         document.getElementById('activity').innerHTML = "Playing: " + data['data']['activities'][0]['name'];
       });
 
     </script>
-
   </body>
 </html>
