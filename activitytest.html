@@ -29,10 +29,9 @@
           document.getElementById('activity').innerHTML = "I am currently offline.";
 
         } else {
-          console.log("else")
 
           // If i am playing something or listening to music
-          if (json['data']['activities'].len != 0) {
+          if (json['data']['activities'].length > 0) {
             console.log('activity found')
 
             // If the first activity is spotify
@@ -43,9 +42,16 @@
               if (json['data']['activities'][1] != null) {
                 console.log('other activities exist')
 
+                // If Atom is detected, disdplay additional info
+                if (json['data']['activities'][1]['name'] == 'Atom Editor') {
+                  document.getElementById('activity').innerHTML = "I am currently programming in Atom: Project = " + json['data']['activities'][1]['details'] + ", File = " + json['data']['activities'][1]['state'];
+                // if not, just display basic info
+                } else {
+                  document.getElementById('activity').innerHTML = "I am currently playing " + json['data']['activities'][1]['name'];
+                }
                 /*// check if Atom is open
                 var atom_found = false;
-                for (var i in json['data']['activities'].len) {
+                for (var i in json['data']['activities'].lenth) {
                   if (json['data']['activities'][i]['name'] == 'Atom Editor') {
                     document.getElementById('activity').innerHTML = "I am currently programming in Atom: Project = " + json['data']['activities'][i]['details'] + ", File = " + json['data']['activities'][i]['state'];
                     atom_found = true;
