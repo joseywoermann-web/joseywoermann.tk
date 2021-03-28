@@ -2,13 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>about - joseywoermann</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+    <title>activity - joseywoermann</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
   </head>
 
   <body>
 
-    <h1 id="activity">hello</h1>
+    <h1 id="activity">loading...</h1>
 
     <script type="text/javascript">
 
@@ -21,15 +21,6 @@
         console.log(data['data']['activities'][0]['name'])
         document.getElementById('activity').innerHTML = "Playing: " + data['data']['activities'][0]['name'];
       });
-
-
-      /*var xmlHttp = new XMLHttpRequest();
-      xmlHttp.onreadystatechange = function() {
-      if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-        document.getElementById('activity').innerHTML = JSON.parse(xmlHttp.responseText).total;
-      }
-      xmlHttp.open("GET", url, true);
-      xmlHttp.send();*/
 
     </script>
 
