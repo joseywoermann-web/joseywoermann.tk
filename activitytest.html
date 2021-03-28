@@ -11,12 +11,76 @@
     <h1 id="activity">loading...</h1>
 
     <script type="text/javascript">
-
+      console.log('test1')
       var url = "https://api.lanyard.rest/v1/users/586206645592391711";
 
-      $.getJSON(url, function(data) {
+      /*$.getJSON(url, function(data) {
         console.log("getJSON executed")
         document.getElementById('activity').innerHTML = "Playing: " + data['data']['activities'][0]['name'];
+      });*/
+
+      $.getJSON(url, function(json) {
+        console.log("getJSON executed")
+
+
+        // document.getElementById('activity').innerHTML = "Playing: " + data['data']['activities'][0]['name'];
+        if (json['data']['discord_status'] == 'offline') {
+          console.log("offline")
+          document.getElementById('activity').innerHTML = "I am currently offline.";
+
+        } else {
+          console.log("else")
+
+          // If i am playing something or listening to music
+          if (json['data']['activities'].len != 0) {
+            console.log('activity found')
+
+            // If the first activity is spotify
+            if (json['data']['activities'][0]['type'] == 2) {
+              console.log('first activity is spotify')
+
+              // Check if other activities exist
+              if (json['data']['activities'][1] != null) {
+                console.log('other activities exist')
+
+                /*// check if Atom is open
+                var atom_found = false;
+                for (var i in json['data']['activities'].len) {
+                  if (json['data']['activities'][i]['name'] == 'Atom Editor') {
+                    document.getElementById('activity').innerHTML = "I am currently programming in Atom: Project = " + json['data']['activities'][i]['details'] + ", File = " + json['data']['activities'][i]['state'];
+                    atom_found = true;
+                    console.log('Atom found');
+                    break;
+                  // if Atom is not open, choose other game
+                  } else {
+                    document.getElementById('activity').innerHTML = "I am currently playing: " + json['data']['activities'][1]['name'];
+                  }
+                }
+
+                // if Atom is not open, choose other game
+                if (atom_found = false) {
+                  document.getElementById('activity').innerHTML = "I am currently playing: " + json['data']['activities'][1]['name'];
+                }*/
+
+              // If no other activities exist, display Spotify
+              } else {
+                document.getElementById('activity').innerHTML = "I am currently listening to : '" + json['data']['spotify']['song'] + "' by '" + json['data']['spotify']['artist'] + "'";
+              }
+            // If the first activity is not Spotify
+            } else {
+              if (json['data']['activities'][0]['name'] == 'Atom Editor') {
+                document.getElementById('activity').innerHTML = "I am currently programming in Atom: Project = " + json['data']['activities'][0]['details'] + ", File = " + json['data']['activities'][0]['state'];
+              } else {
+                document.getElementById('activity').innerHTML = "I am currently playing " + json['data']['activities'][0]['name'];
+              }
+            }
+
+          // If I am doing nothing
+          } else {
+            document.getElementById('activity').innerHTML = "I am currently doing nothing";
+          }
+        }
+
       });
 
     </script>
