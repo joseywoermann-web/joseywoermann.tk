@@ -11,32 +11,25 @@
     <h1 id="activity">loading...</h1>
 
     <script type="text/javascript">
-      console.log('test1')
+
       var url = "https://api.lanyard.rest/v1/users/586206645592391711";
 
-      /*$.getJSON(url, function(data) {
-        console.log("getJSON executed")
-        document.getElementById('activity').innerHTML = "Playing: " + data['data']['activities'][0]['name'];
-      });*/
-
       $.getJSON(url, function(json) {
-        console.log("getJSON executed")
+        console.log("Fetched JSON data from lanyard.");
 
-
-        // document.getElementById('activity').innerHTML = "Playing: " + data['data']['activities'][0]['name'];
         if (json['data']['discord_status'] == 'offline') {
-          console.log("offline")
+
           document.getElementById('activity').innerHTML = "I am currently offline.";
 
         } else {
 
           // If i am playing something or listening to music
           if (json['data']['activities'].length > 0) {
-            console.log('activity found')
+            console.log('Activities found.')
 
             // If the first activity is spotify
             if (json['data']['activities'][0]['type'] == 2) {
-              console.log('first activity is spotify')
+              console.log('First activity is Spotify')
 
               // Check if other activities exist
               if (json['data']['activities'][1] != null) {
