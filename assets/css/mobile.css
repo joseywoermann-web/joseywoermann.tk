@@ -21,6 +21,15 @@
 
   .repository-box {
     background-color: #131313;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    width: 80vw;
+  }
+
+  .repository-box {
+    background-color: #131313;
     border: 2px solid #ffffff;
     border-radius: 8px;
     display: inline-block;
