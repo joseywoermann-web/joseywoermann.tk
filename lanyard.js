@@ -27,16 +27,20 @@ function getinfo() {
         document.getElementById("details").innerHTML = "listening to " + json['data']['spotify']['song'];
         document.getElementById("additional-details").innerHTML = "by " + json['data']['spotify']['artist'];
         document.getElementById("album-art").src = json['data']['spotify']['album_art_url']
+        document.getElementById("album-art").style.visibility = "visible";
 
       } else if (json['data']['activities'][0]['name'] == "Atom Editor") {
         document.getElementById("game").innerHTML = "atom";
         document.getElementById("details").innerHTML = "editing " + json['data']['activities'][0]['state'].substring(8);
         document.getElementById("additional-details").innerHTML = "working on " + json['data']['activities'][0]['details'].substring(11);
+        document.getElementById("album-art").src = "assets/images/atom.png"
+        document.getElementById("album-art").style.visibility = "visible";
 
       } else if (json['data']['activities'][0]['name'] == "Visual Studio Code") {
         document.getElementById("game").innerHTML = "vs code";
         document.getElementById("details").innerHTML = "editing " + json['data']['activities'][0]['details'].substring(8);
         document.getElementById("additional-details").innerHTML = "working on " + json['data']['activities'][0]['state'].substring(11);
+        document.getElementById("album-art").style.visibility = "hidden";
       // or just display the game name
       } else {
         document.getElementById("game").innerHTML = json['data']['activities'][0]['name'];
