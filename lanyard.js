@@ -4,17 +4,12 @@ function getinfo() {
   $.getJSON(url, function(json) {
 
     // display status
-    if (json['data']['discord_status'] == "online") {
-      document.getElementById("status").innerHTML = "online";
-
-    } else if (json['data']['discord_status'] == "idle") {
-      document.getElementById("status").innerHTML = "inactive";
-
-    } else if (json['data']['discord_status'] == "dnd") {
-      document.getElementById("status").innerHTML = "busy";
-
-    } else {
+    if (json['data']['discord_status'] == "offline") {
       document.getElementById("status").innerHTML = "offline";
+      document.getElementById("status").style.visibility = "visible";
+    } else {
+      document.getElementById("status").innerHTML = "online";
+      document.getElementById("status").style.visibility = "hidden";
     }
 
     // check for activities
@@ -23,23 +18,24 @@ function getinfo() {
       // add special info from rich presence
       if (json['data']['listening_to_spotify'] == true) {
         console.log("Spotify detected");
-        document.getElementById("game").innerHTML = "listening to spotify";
-        document.getElementById("details").innerHTML = "listening to " + json['data']['spotify']['song'];
+        //document.getElementById("game").innerHTML = "Spotify";
+        document.getElementById("details").innerHTML = json['data']['spotify']['song'];
         document.getElementById("additional-details").innerHTML = "by " + json['data']['spotify']['artist'];
         document.getElementById("album-art").src = json['data']['spotify']['album_art_url']
         document.getElementById("album-art").style.visibility = "visible";
 
       } else if (json['data']['activities'][0]['name'] == "Atom Editor") {
-        document.getElementById("game").innerHTML = "atom";
+        document.getElementById("game").innerHTML = "Atom";
         document.getElementById("details").innerHTML = "editing " + json['data']['activities'][0]['state'].substring(8);
         document.getElementById("additional-details").innerHTML = "working on " + json['data']['activities'][0]['details'].substring(11);
         document.getElementById("album-art").src = "assets/images/atom.png"
         document.getElementById("album-art").style.visibility = "visible";
 
       } else if (json['data']['activities'][0]['name'] == "Visual Studio Code") {
-        document.getElementById("game").innerHTML = "vs code";
+        document.getElementById("game").innerHTML = "VS Code";
         document.getElementById("details").innerHTML = "editing " + json['data']['activities'][0]['details'].substring(8);
         document.getElementById("additional-details").innerHTML = "working on " + json['data']['activities'][0]['state'].substring(11);
+        document.getElementById("album-art").src = "assets/images/vscode.png"
         document.getElementById("album-art").style.visibility = "hidden";
       // or just display the game name
       } else {

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>activity - joseywoermann</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <script src="lanyard.js" charset="utf-8"></script>
+
+
+    <style media="screen">
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+      * {
+        color: white;
+      }
+
+      body {
+        background-color: #010101;
+      }
+
+      .lanyard {
+        background-color: #131313;
+        /*border: 3px solid #ffffff;*/
+        border-radius: 8px;
+
+        height: 20vh;
+        width: 20vw;
+      }
+
+      .lanyard-info {
+        font-family: "Montserrat", sans-serif;
+        float: left;
+        margin-left: 10px;
+      }
+
+      #album-art {
+        height: 19vh;
+        width: 19vh;
+        /*border: 3px solid #ffffff;
+        */border-radius: 12px;
+        float: right;
+        margin-right: 10px;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="lanyard">
+      <img id="album-art" src="">
+      <p class="lanyard-info" id="game"></p> <!-- Atom, Spotify etc. -->
+      <p class="lanyard-info" id="details"></p> <!-- file , song -->
+      <p class="lanyard-info" id="additional-details"></p> <!-- project, artist -->
+      <p class="lanyard-info" id="status"></p> <!-- online, dnd etc -->
+    </div>
+
+    <script type="text/javascript">
+      // refresh lanyard data every 30 seconds
+      setInterval(getinfo, 3000)
+    </script>
+  </body>
+</html>
