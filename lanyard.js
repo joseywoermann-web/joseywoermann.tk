@@ -26,6 +26,7 @@ function getinfo() {
         document.getElementById("game").innerHTML = "listening to spotify";
         document.getElementById("details").innerHTML = "listening to " + json['data']['spotify']['song'];
         document.getElementById("additional-details").innerHTML = "by " + json['data']['spotify']['artist'];
+        document.getElementById("album-art").src = json['data']['spotify']['album_art_url']
 
       } else if (json['data']['activities'][0]['name'] == "Atom Editor") {
         document.getElementById("game").innerHTML = "atom";

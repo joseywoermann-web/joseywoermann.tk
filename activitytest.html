@@ -10,17 +10,17 @@
 
   <body>
 
-    <p id="game">loading...</p> <!-- Atom, Spotify etc. -->
-    <p id="details">loading...</p> <!-- file , song -->
-    <p id="additional-details">loading</p> <!-- project, artist -->
-    <p id="status">loading...</p> <!-- online, dnd etc -->
+    <p id="game"></p> <!-- Atom, Spotify etc. -->
+    <p id="details"></p> <!-- file , song -->
+    <p id="additional-details"></p> <!-- project, artist -->
+    <p id="status"></p> <!-- online, dnd etc -->
+    <img id="album-art" src=""> <!-- display only if Spotify is detected -->
 
 
     </div>
     <script type="text/javascript">
-      document.addEventListener("DOMContentLoaded", function() {
-        getinfo()
-      });
+      // refresh lanyard data every 5 seconds
+      setInterval(getinfo, 5000)
     </script>
   </body>
 </html>
