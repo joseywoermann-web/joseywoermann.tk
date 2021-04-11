@@ -4,84 +4,23 @@
     <meta charset="utf-8" />
     <title>activity - joseywoermann</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <script src="lanyard.js" charset="utf-8"></script>
+
   </head>
 
   <body>
 
-    <h1 id="activity">loading...</h1>
+    <p id="game">loading...</p> <!-- Atom, Spotify etc. -->
+    <p id="details">loading...</p> <!-- file , song -->
+    <p id="additional-details">loading</p> <!-- project, artist -->
+    <p id="status">loading...</p> <!-- online, dnd etc -->
 
+
+    </div>
     <script type="text/javascript">
-
-      var url = "https://api.lanyard.rest/v1/users/586206645592391711";
-
-      $.getJSON(url, function(json) {
-        console.log("Fetched JSON data from lanyard.");
-
-        if (json['data']['discord_status'] == 'offline') {
-
-          document.getElementById('activity').innerHTML = "I am currently offline.";
-
-        } else {
-
-          // If i am playing something or listening to music
-          if (json['data']['activities'].length > 0) {
-            console.log('Activities found.')
-
-            // If the first activity is spotify
-            if (json['data']['activities'][0]['type'] == 2) {
-              console.log('First activity is Spotify')
-
-              // Check if other activities exist
-              if (json['data']['activities'][1] != null) {
-                console.log('other activities exist')
-
-                // If Atom is detected, disdplay additional info
-                if (json['data']['activities'][1]['name'] == 'Atom Editor') {
-                  document.getElementById('activity').innerHTML = "I am currently programming in Atom: Project = " + json['data']['activities'][1]['details'] + ", File = " + json['data']['activities'][1]['state'];
-                // if not, just display basic info
-                } else {
-                  document.getElementById('activity').innerHTML = "I am currently playing " + json['data']['activities'][1]['name'];
-                }
-                /*// check if Atom is open
-                var atom_found = false;
-                for (var i in json['data']['activities'].lenth) {
-                  if (json['data']['activities'][i]['name'] == 'Atom Editor') {
-                    document.getElementById('activity').innerHTML = "I am currently programming in Atom: Project = " + json['data']['activities'][i]['details'] + ", File = " + json['data']['activities'][i]['state'];
-                    atom_found = true;
-                    console.log('Atom found');
-                    break;
-                  // if Atom is not open, choose other game
-                  } else {
-                    document.getElementById('activity').innerHTML = "I am currently playing: " + json['data']['activities'][1]['name'];
-                  }
-                }
-
-                // if Atom is not open, choose other game
-                if (atom_found = false) {
-                  document.getElementById('activity').innerHTML = "I am currently playing: " + json['data']['activities'][1]['name'];
-                }*/
-
-              // If no other activities exist, display Spotify
-              } else {
-                document.getElementById('activity').innerHTML = "I am currently listening to : '" + json['data']['spotify']['song'] + "' by '" + json['data']['spotify']['artist'] + "'";
-              }
-            // If the first activity is not Spotify
-            } else {
-              if (json['data']['activities'][0]['name'] == 'Atom Editor') {
-                document.getElementById('activity').innerHTML = "I am currently programming in Atom: Project = " + json['data']['activities'][0]['details'] + ", File = " + json['data']['activities'][0]['state'];
-              } else {
-                document.getElementById('activity').innerHTML = "I am currently playing " + json['data']['activities'][0]['name'];
-              }
-            }
-
-          // If I am doing nothing
-          } else {
-            document.getElementById('activity').innerHTML = "I am currently doing nothing";
-          }
-        }
-
+      document.addEventListener("DOMContentLoaded", function() {
+        getinfo()
       });
-
     </script>
   </body>
 </html>
