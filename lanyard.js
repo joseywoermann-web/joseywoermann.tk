@@ -18,7 +18,7 @@ function getinfo() {
       // add special info from rich presence
       if (json['data']['listening_to_spotify'] == true) {
         console.log("Spotify detected");
-        //document.getElementById("game").innerHTML = "Spotify";
+        document.getElementById("game").innerHTML = "Spotify";
         document.getElementById("details").innerHTML = json['data']['spotify']['song'];
         document.getElementById("additional-details").innerHTML = "by " + json['data']['spotify']['artist'];
         document.getElementById("album-art").src = json['data']['spotify']['album_art_url']

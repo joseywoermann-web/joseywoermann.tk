@@ -19,32 +19,58 @@
       }
 
       .lanyard {
-        background-color: #131313;
-        /*border: 3px solid #ffffff;*/
+        display: grid;
+        /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;*/
+        grid-template-columns: 5vh 5vh 5vh 1fr 1fr 1fr;
+        grid-template-rows: 5vh 5vh 5vh;
+        gap: 0px 0px;
+        grid-template-areas:
+          "album-art album-art album-art game game game"
+          "album-art album-art album-art details details details"
+          "album-art album-art album-art additional-details additional-details additional-details";
+
+        /*STYLING*/
+        background-color: #131313; /*ALTERNATIVE: if Spotify is detected, make background green #1db954*/
+        border: 3px solid #131313;
         border-radius: 8px;
+        place-items: center;
 
-        height: 20vh;
         width: 20vw;
-      }
-
-      .lanyard-info {
-        font-family: "Montserrat", sans-serif;
-        float: left;
-        margin-left: 10px;
+        height: 15vh;
       }
 
       #album-art {
-        height: 19vh;
-        width: 19vh;
-        /*border: 3px solid #ffffff;
-        */border-radius: 12px;
-        float: right;
-        margin-right: 10px;
-        position: relative;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+        grid-area: album-art;
+        /*width: 100%;
+        height: 100%;*/
+        width: 13vh;
+        height: 13vh;
+
+
+        /*border: 3px solid #ffffff;*/
+        border-radius: 8px;
       }
+
+      #game {
+        grid-area: game;
+      }
+
+      #details {
+        grid-area: details;
+      }
+
+      #additional-details {
+        grid-area: additional-details;
+      }
+
+      .lanyard-text {
+        /*font-size: 28px;*/
+        font-family: "Montserrat", sans-serif;
+      }
+
+
+
 
     </style>
   </head>
@@ -53,10 +79,10 @@
 
     <div class="lanyard">
       <img id="album-art" src="">
-      <p class="lanyard-info" id="game"></p> <!-- Atom, Spotify etc. -->
-      <p class="lanyard-info" id="details"></p> <!-- file , song -->
-      <p class="lanyard-info" id="additional-details"></p> <!-- project, artist -->
-      <p class="lanyard-info" id="status"></p> <!-- online, dnd etc -->
+      <p class="lanyard-text" id="game"></p> <!-- Atom, Spotify etc. -->
+      <p class="lanyard-text" id="details"></p> <!-- file , song -->
+      <p class="lanyard-text" id="additional-details"></p> <!-- project, artist -->
+      <p class="lanyard-text" id="status"></p> <!-- online, dnd etc -->
     </div>
 
     <script type="text/javascript">
