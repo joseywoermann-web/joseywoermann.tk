@@ -42,13 +42,8 @@
 
       #album-art {
         grid-area: album-art;
-        /*width: 100%;
-        height: 100%;*/
-        width: 13vh;
-        height: 13vh;
-
-
-        /*border: 3px solid #ffffff;*/
+        width: 90%;
+        height: 90%;
         border-radius: 8px;
       }
 
@@ -68,26 +63,21 @@
         /*font-size: 28px;*/
         font-family: "Montserrat", sans-serif;
       }
-
-
-
-
     </style>
   </head>
 
   <body>
 
-    <div class="lanyard">
+    <div class="lanyard" id="lanyard-box">
       <img id="album-art" src="">
       <p class="lanyard-text" id="game"></p> <!-- Atom, Spotify etc. -->
       <p class="lanyard-text" id="details"></p> <!-- file , song -->
       <p class="lanyard-text" id="additional-details"></p> <!-- project, artist -->
-      <p class="lanyard-text" id="status"></p> <!-- online, dnd etc -->
     </div>
 
     <script type="text/javascript">
       // refresh lanyard data every 30 seconds
-      setInterval(getinfo, 30000)
+      setInterval(getinfo, 3000)
     </script>
   </body>
 </html>
