@@ -20,7 +20,7 @@ function getInfo() {
           console.log("Spotify detected");
           setText("game", "Spotify");
           setText("details", json['data']['spotify']['song']);
-          setText("additional-details", "by " + json['data']['spotify']['artist']);
+          setText("additional-details", "by " + json['data']['spotify']['artist'].split(';')[0]);
           setAlbumArt(json['data']['spotify']['album_art_url']);
           addSpotifyURL(json['data']['spotify']['track_id']);
           updateColor("Spotify");
@@ -79,5 +79,5 @@ function getInfo() {
       document.getElementById("lanyard-box").style.border = "3px solid #131313";
     }
   }
-  
+
 }
