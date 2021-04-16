@@ -19,8 +19,8 @@ function getInfo() {
         if (json['data']['listening_to_spotify'] == true) {
           console.log("Spotify detected");
           setText("game", "Spotify");
-          setText("details", json['data']['spotify']['song']);
-          setText("additional-details", "by " + json['data']['spotify']['artist'].split(';')[0]);
+          setText("details", json['data']['spotify']['song'].split(' (feat.')[0]); // remove all potential "feat. artist XYZ"
+          setText("additional-details", "by " + json['data']['spotify']['artist'].split(';')[0]); // prevent things like this [https://imgur.com/a/Jg66W3N] from hgappening :D
           setAlbumArt(json['data']['spotify']['album_art_url']);
           addSpotifyURL(json['data']['spotify']['track_id']);
           updateColor("Spotify");
