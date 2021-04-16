@@ -22,29 +22,25 @@ function getInfo() {
           setText("additional-details", "by " + json['data']['spotify']['artist']);
           setAlbumArt(json['data']['spotify']['album_art_url']);
           setVisibility("album-art", "visible");
+          document.getElementById("lanyard-box").style.backgroundColor = "#1db954";
           addSpotifyURL(json['data']['spotify']['track_id']);
 
-          // update the containers colors for some extra style
-          document.getElementById("lanyard-box").style.backgroundColor = "#1db954";
-          document.getElementById("lanyard-box").style.border = "3px solid #1db954";
-
-
         } else if (json['data']['activities'][0]['name'] == "Atom Editor") {
-          setText("game", "Atom");
-          setText("details", "editing " + json['data']['activities'][0]['state'].substring(8));
-          setText("additional-details", "working on " + json['data']['activities'][0]['details'].substring(11));
+          document.getElementById("game").innerHTML = "Atom";
+          document.getElementById("details").innerHTML = "editing " + json['data']['activities'][0]['state'].substring(8);
+          document.getElementById("additional-details").innerHTML = "working on " + json['data']['activities'][0]['details'].substring(11);
           setAlbumArt("assets/images/atom.png");
           setVisibility("album-art", "visible");
 
         } else if (json['data']['activities'][0]['name'] == "Visual Studio Code") {
-          setText("game", "VS Code");
-          setText("details", "editing " + json['data']['activities'][0]['details'].substring(8));
-          setText("additional-details", "working on " + json['data']['activities'][0]['state'].substring(11));
+          document.getElementById("game").innerHTML = "VS Code";
+          document.getElementById("details").innerHTML = "editing " + json['data']['activities'][0]['details'].substring(8);
+          document.getElementById("additional-details").innerHTML = "working on " + json['data']['activities'][0]['state'].substring(11);
           setAlbumArt("assets/images/vscode.png");
           setVisibility("album-art", "visible");
         // or just display the game name
         } else {
-          setText("game", json['data']['activities'][0]['name']);
+          document.getElementById("game").innerHTML = json['data']['activities'][0]['name'];
           setVisibility("album-art", "hidden");
         }
       }
