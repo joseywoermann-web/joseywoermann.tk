@@ -10,6 +10,7 @@ function getInfo() {
 
     } else {
       setVisibility("lanyard-box", "visible");
+      setVisibility("album-art", "visible");
 
       // check for activities if I am online
       if (json['data']['activities'].length > 0) {
@@ -18,31 +19,35 @@ function getInfo() {
         if (json['data']['listening_to_spotify'] == true) {
           console.log("Spotify detected");
           setText("game", "Spotify");
-          setText("details", json['data']['spotify']['song']);
-          setText("additional-details", "by " + json['data']['spotify']['artist']);
+          setText("details", json['data']['spotify']['song'].split(' (feat.')[0]); // remove all potential "feat. artist XYZ"
+          setText("additional-details", "by " + json['data']['spotify']['artist'].split(';')[0]); // prevent things like this [https://imgur.com/a/Jg66W3N] from hgappening :D
           setAlbumArt(json['data']['spotify']['album_art_url']);
-          setVisibility("album-art", "visible");
-          document.getElementById("lanyard-box").style.backgroundColor = "#1db954";
           addSpotifyURL(json['data']['spotify']['track_id']);
+          updateColor("Spotify");
+
 
         } else if (json['data']['activities'][0]['name'] == "Atom Editor") {
-          document.getElementById("game").innerHTML = "Atom";
-          document.getElementById("details").innerHTML = "editing " + json['data']['activities'][0]['state'].substring(8);
-          document.getElementById("additional-details").innerHTML = "working on " + json['data']['activities'][0]['details'].substring(11);
+          setText("game", "Atom");
+          setText("details", "editing " + json['data']['activities'][0]['state'].substring(8));
+          setText("additional-details", "working on " + json['data']['activities'][0]['details'].substring(11));
           setAlbumArt("assets/images/atom.png");
-          setVisibility("album-art", "visible");
+          updateColor("Atom Editor");
 
         } else if (json['data']['activities'][0]['name'] == "Visual Studio Code") {
-          document.getElementById("game").innerHTML = "VS Code";
-          document.getElementById("details").innerHTML = "editing " + json['data']['activities'][0]['details'].substring(8);
-          document.getElementById("additional-details").innerHTML = "working on " + json['data']['activities'][0]['state'].substring(11);
+          setText("game", "VS Code");
+          setText("details", "editing " + json['data']['activities'][0]['details'].substring(8));
+          setText("additional-details", "working on " + json['data']['activities'][0]['state'].substring(11));
           setAlbumArt("assets/images/vscode.png");
-          setVisibility("album-art", "visible");
+          updateColor("VS Code");
         // or just display the game name
         } else {
-          document.getElementById("game").innerHTML = json['data']['activities'][0]['name'];
+          setText("game", json['data']['activities'][0]['name']);
           setVisibility("album-art", "hidden");
+          updateColor("else");
         }
+      } else {
+        setVisibility("lanyard-box", "hidden");
+        setVisibility("album-art", "hidden");
       }
 
     }
@@ -64,4 +69,15 @@ function getInfo() {
   function setText(elementId, text) {
     document.getElementById(elementId).innerHTML = text;
   }
+
+  function updateColor(app) {
+    if (app === "Spotify") {
+      document.getElementById("lanyard-box").style.backgroundColor = "#1db954";
+      document.getElementById("lanyard-box").style.border = "3px solid #1db954";
+    } else {
+      document.getElementById("lanyard-box").style.backgroundColor = "#131313";
+      document.getElementById("lanyard-box").style.border = "3px solid #131313";
+    }
+  }
+
 }
