@@ -47,8 +47,10 @@
     <!--init lanyard-->
     <script type="text/javascript">
       console.log("\n\noh hey there! What are you doing here? 👀\n\n\n");
-      // refresh lanyard data every 30 seconds
-      setInterval(getInfo, 2000)
+
+      // refresh lanyard data every X seconds
+      let timeout = 5;
+      setInterval(getInfo, (timeout * 1000))
     </script>
 
   </body>

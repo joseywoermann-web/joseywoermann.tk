@@ -2,6 +2,7 @@ function getInfo() {
   const url = "https://api.lanyard.rest/v1/users/586206645592391711";
 
   $.getJSON(url, function(json) {
+    console.log("Retrieving data from lanyard..");
 
     // display status
     if (json['data']['discord_status'] == "offline") {
@@ -17,7 +18,6 @@ function getInfo() {
 
         // add special info from rich presence
         if (json['data']['listening_to_spotify'] == true) {
-          console.log("Spotify detected");
           setText("game", "Spotify");
           setText("details", json['data']['spotify']['song'].split(' (feat.')[0]); // remove all potential "feat. artist XYZ"
           setText("additional-details", "by " + json['data']['spotify']['artist'].split(';')[0]); // prevent things like this [https://imgur.com/a/Jg66W3N] from hgappening :D
