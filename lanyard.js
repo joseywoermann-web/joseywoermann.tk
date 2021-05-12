@@ -16,6 +16,8 @@ function getInfo() {
       // check for activities if I am online
       if (json['data']['activities'].length > 0) {
 
+        const firstGame = json['data']['activities'][0]
+
         // add special info from rich presence
         if (json['data']['listening_to_spotify'] == true) {
           setText("game", "Spotify");
@@ -26,22 +28,23 @@ function getInfo() {
           updateColor("Spotify");
 
 
-        } else if (json['data']['activities'][0]['name'] == "Atom Editor") {
+        } else if (firstGame['name'] == "Atom Editor") {
           setText("game", "Atom");
-          setText("details", "editing " + json['data']['activities'][0]['state'].substring(8));
-          setText("additional-details", "working on " + json['data']['activities'][0]['details'].substring(11));
+          setText("details", "editing " + firstGame['state'].substring(8));
+          setText("additional-details", "working on " + firstGame['details'].substring(11));
           setAlbumArt("assets/images/atom.png");
           updateColor("Atom Editor");
 
-        } else if (json['data']['activities'][0]['name'] == "Visual Studio Code") {
+        } else if (firstGame['name'] == "Visual Studio Code") {
           setText("game", "VS Code");
-          setText("details", "editing " + json['data']['activities'][0]['details'].substring(8));
-          setText("additional-details", "working on " + json['data']['activities'][0]['state'].substring(11));
+          setText("details", "editing " + firstGame['details'].substring(8));
+          setText("additional-details", "working on " + firstGame['state'].substring(11));
           setAlbumArt("assets/images/vscode.png");
           updateColor("VS Code");
+
         // or just display the game name
         } else {
-          setText("game", json['data']['activities'][0]['name']);
+          setText("game", firstGame['name']);
           setVisibility("album-art", "hidden");
           updateColor("else");
         }
@@ -49,9 +52,7 @@ function getInfo() {
         setVisibility("lanyard-box", "hidden");
         setVisibility("album-art", "hidden");
       }
-
     }
-
   })
 
   function setVisibility(elementId, state) {
