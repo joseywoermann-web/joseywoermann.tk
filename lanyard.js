@@ -28,7 +28,7 @@ function getInfo() {
           updateColor("Spotify");
 
 
-        } else if (firstGame['name'] == "Atom Editor") {
+        /*} else if (firstGame['name'] == "Atom Editor") {
           setText("game", "Atom");
           setText("details", "editing " + firstGame['state'].substring(8));
           setText("additional-details", "working on " + firstGame['details'].substring(11));
@@ -40,13 +40,15 @@ function getInfo() {
           setText("details", "editing " + firstGame['details'].substring(8));
           setText("additional-details", "working on " + firstGame['state'].substring(11));
           setAlbumArt("assets/images/vscode.png");
-          updateColor("VS Code");
+          updateColor("VS Code");*/
 
         // or just display the game name
         } else {
-          setText("game", firstGame['name']);
+          //setText("details", firstGame['name']);
           setVisibility("album-art", "hidden");
-          updateColor("else");
+          //updateColor("else");
+          setVisibility("lanyard-box", "hidden");
+          setVisibility("album-art", "hidden");
         }
       } else {
         setVisibility("lanyard-box", "hidden");
