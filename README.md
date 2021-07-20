@@ -1,7 +1,0 @@
-# My personal website (WIP)
-
-
-
-
-
-
