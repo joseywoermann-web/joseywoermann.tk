@@ -1,47 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="/assets/css/new.css">
-        <title>home • joseywoermann</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/res/new.css" />
+        <title>Josey Wörmann</title>
+        <script src="new.js"></script>
     </head>
     <body>
         <div class="wrapper">
-
-            <div class="left">
-                <div class="lanyard" id="lanyard-box">
-                    <img id="album-art" src="">
-                    <p class="lanyard-text" id="game"></p> <!-- Atom, Spotify etc. -->
-                    <a class="lanyard-text" id="details" target="_blank"></a> <!-- file , song -->
-                    <p class="lanyard-text" id="additional-details"></p> <!-- project, artist -->
+            <div class="main-container">
+                <p>Josey C. Wörmann</p>
+                <div class="left">
+                    <div class="lanyard" id="lanyard-box">
+                        <img id="lanyard-album-art" src="" />
+                        <p class="lanyard-text" id="lanyard-song"></p>
+                        <a class="lanyard-text" id="lanyard-album"></a>
+                        <p class="lanyard-text" id="lanyard-artist"></p>
+                        <a class="lanyard-text" id="lanyard-url" href="#" target="_blank">Click to play</a>
+                    </div>
                 </div>
-                <!--<div class="back-arrow"></div>-->
-            </div>
-
-            <div class="center">
-                <div class="links">
-                    <button class="social-button" id="twitter-button" onclick="location.href='https://twitter.com/joseywoermann'">
-                        <img class="social-icon" id="twitter-image" src="/assets/images/twitter.png" alt="twitter logo">
-                    </button>
-                    <button class="social-button" id="github-button" onclick="location.href='https://github.com/joseywoermann'">
-                        <img class="social-icon" id="github-image" src="/assets/images/github.png" alt="github logo">
-                    </button>
-                    <button class="social-button" id="reddit-button" onclick="location.href='https://reddit.com/u/joseywoermann'">
-                        <img class="social-icon" id="reddit-image" src="/assets/images/reddit.png" alt="reddit logo">
-                    </button>
-                    <button class="social-button" id="instagram-button" onclick="location.href='https://instagram.com/joseywoermann'">
-                        <img class="social-icon" id="instagram-image" src="/assets/images/instagram.png" alt="instagram logo">
-                    </button>
-                    <button class="social-button" id="mail-button" onclick="location.href='mailto:jcw05@gmx.de'">
-                        <img class="social-icon" id="mail-image" src="/assets/images/mail.png" alt="mail logo">
-                    </button>
+                
+                <div class="profile-link-container">
+                    <a class="profile-links" id="twitter" href="https://twitter.com/joseywoermann">Twitter</a><br>
+                    <a class="profile-links" id="github" href="https://github.com/joseywoermann">Github</a><br>
+                    <a class="profile-links" id="polywork" href="https://polywork.com/joseywoermann">Polywork</a><br>
+                    <a class="profile-links" id="discord" href="https://discord.com/users/586206645592391711">Discord</a><br>
                 </div>
             </div>
-
-            <div class="right">
-
-            </div>
-
         </div>
+
+        <script type="text/javascript">
+            console.log("\n\noh hey there! What are you doing here? 👀\n\n\n");
+            lanyard();
+            let timeout = 10;
+            setInterval(lanyard, timeout * 1000);
+        </script>
     </body>
 </html>

@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Manrope";
+    src: url("../fonts/Manrope-Medium.woff") format("woff2"),
+        url("../fonts/Manrope-Medium.woff2") format("woff");
+}
+/* TODO: make /fonts/ smaller */
+
+* {
+    font-family: "Manrope";
+    color: hsl(192, 81%, 10%);
+}
+
+.wrapper {
+    font-size: 28pt;
+    line-height: 35px;
+    margin: 0 auto;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-links {
+    text-decoration: none;
+}
+
+/* .profile-link-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". . . ."
+        "twitter github polywork discord"
+        ". . . .";
+}
+
+#twitter {
+    grid-area: twitter;
+}
+#github {
+    grid-area: github;
+}
+#polywork {
+    grid-area: polywork;
+}
+#discord {
+    grid-area: discord;
+}
+
+.profile-links {
+    justify-self: center;
+} */
+
+.main-container {
+    display: grid;
+    /* grid-template-columns: ; */
+}
